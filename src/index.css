@@ -85,18 +85,18 @@
   --border: #bfdbfe;
 }
 
-/* Grayscale theme - Updated for content density */
+/* Grayscale theme - Extremely content-dense with minimal spacing */
 .theme-grayscale {
   /* Typography */
   --font-family: 'IBM Plex Mono', monospace;
-  --font-size-xs: 0.7rem;
-  --font-size-sm: 0.8rem;
-  --font-size-md: 0.9rem;
-  --font-size-lg: 1rem;
-  --font-size-xl: 1.1rem;
-  --font-size-2xl: 1.25rem;
-  --font-size-3xl: 1.5rem;
-  --font-size-4xl: 1.75rem;
+  --font-size-xs: 0.6rem;
+  --font-size-sm: 0.7rem;
+  --font-size-md: 0.8rem;
+  --font-size-lg: 0.9rem;
+  --font-size-xl: 0.95rem;
+  --font-size-2xl: 1rem;
+  --font-size-3xl: 1.1rem;
+  --font-size-4xl: 1.25rem;
   
   /* Colors */
   --primary: #1a1a1a;
@@ -121,14 +121,14 @@
   --shadow-md: 0 1px 2px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 1px 3px rgba(0, 0, 0, 0.1);
   
-  /* Spacing - Reduced for content density */
-  --spacing-1: 0.125rem;
-  --spacing-2: 0.25rem;
-  --spacing-3: 0.5rem;
-  --spacing-4: 0.75rem;
-  --spacing-5: 1rem;
-  --spacing-6: 1.25rem;
-  --spacing-8: 1.5rem;
+  /* Spacing - Extremely reduced for maximum content density */
+  --spacing-1: 0.0625rem;
+  --spacing-2: 0.125rem;
+  --spacing-3: 0.1875rem;
+  --spacing-4: 0.25rem;
+  --spacing-5: 0.375rem;
+  --spacing-6: 0.5rem;
+  --spacing-8: 0.75rem;
   
   /* Border radius */
   --radius-sm: 0;
@@ -146,10 +146,10 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Grayscale theme specific styles - Optimized for content density */
+/* Grayscale theme specific styles - Ultra-compact for maximum content density */
 .theme-grayscale body {
-  line-height: 1.4;
-  letter-spacing: -0.01em;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
 }
 
 .theme-grayscale h1, 
@@ -162,20 +162,20 @@ body {
   font-weight: 700;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  margin-top: 0.75rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.125rem;
 }
 
 .theme-grayscale h1 {
   font-size: var(--font-size-4xl);
   border-bottom: 1px solid var(--border);
-  padding-bottom: 0.25rem;
+  padding-bottom: 0.0625rem;
 }
 
 .theme-grayscale h2 {
   font-size: var(--font-size-3xl);
   border-bottom: 1px solid var(--border);
-  padding-bottom: 0.125rem;
+  padding-bottom: 0.0625rem;
 }
 
 .theme-grayscale h3 {
@@ -183,14 +183,14 @@ body {
 }
 
 .theme-grayscale p {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.25rem;
 }
 
 .theme-grayscale a {
   color: var(--primary);
   text-decoration: underline;
   text-decoration-thickness: 1px;
-  text-underline-offset: 2px;
+  text-underline-offset: 1px;
 }
 
 .theme-grayscale a:hover {
@@ -201,35 +201,36 @@ body {
 .theme-grayscale pre {
   font-family: var(--font-family);
   background-color: var(--surface-alt);
-  padding: 0.1em 0.2em;
+  padding: 0.0625em 0.125em;
   border-radius: 0;
   font-size: 0.9em;
 }
 
 .theme-grayscale pre {
-  padding: 0.5rem;
+  padding: 0.125rem;
   overflow-x: auto;
   border: 1px solid var(--border);
 }
 
 .theme-grayscale blockquote {
-  border-left: 2px solid var(--border);
-  padding-left: 0.5rem;
+  border-left: 1px solid var(--border);
+  padding-left: 0.125rem;
   margin-left: 0;
   color: var(--secondary);
 }
 
+/* Ultra-compact tables */
 .theme-grayscale table {
   width: 100%;
   border-collapse: collapse;
-  margin: 1rem 0;
+  margin: 0.25rem 0;
   font-size: var(--font-size-xs);
 }
 
 .theme-grayscale th, 
 .theme-grayscale td {
   border: 1px solid var(--border);
-  padding: 0.25rem 0.5rem;
+  padding: 0.0625rem 0.125rem;
   text-align: left;
 }
 
@@ -238,7 +239,7 @@ body {
   font-weight: 600;
 }
 
-/* Layout - Optimized for content density */
+/* Layout - Ultra-compact for maximum content density */
 .enterprise-layout {
   display: flex;
   flex-direction: column;
@@ -247,28 +248,28 @@ body {
 
 .enterprise-main {
   flex: 1;
-  padding: 1rem;
+  padding: 0.75rem;
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
 }
 
 .theme-grayscale .enterprise-main {
-  padding: 0.75rem;
+  padding: 0.25rem;
   max-width: 1400px;
 }
 
 @media (max-width: 768px) {
   .enterprise-main {
-    padding: 0.5rem;
+    padding: 0.25rem;
   }
   
   .theme-grayscale .enterprise-main {
-    padding: 0.5rem;
+    padding: 0.125rem;
   }
 }
 
-/* Enterprise Card - Optimized for content density */
+/* Enterprise Card - Ultra-compact for maximum content density */
 .enterprise-card {
   background-color: var(--surface);
   border-radius: var(--radius-lg);
@@ -281,8 +282,8 @@ body {
   border-radius: 0;
   border: 1px solid var(--border);
   box-shadow: var(--shadow-sm);
-  padding: 0.75rem;
-  margin-bottom: 0.75rem;
+  padding: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .enterprise-card:hover {
@@ -293,65 +294,210 @@ body {
   box-shadow: var(--shadow-md);
 }
 
-/* Grid layouts - Optimized for content density */
+/* Grid layouts - Ultra-compact for maximum content density */
 .theme-grayscale .grid {
-  gap: 0.5rem;
+  gap: 0.125rem;
 }
 
 .theme-grayscale .grid-cols-1,
 .theme-grayscale .grid-cols-2,
 .theme-grayscale .grid-cols-3,
 .theme-grayscale .grid-cols-4 {
-  gap: 0.5rem;
+  gap: 0.125rem;
 }
 
-/* Form elements - Optimized for content density */
+/* Form elements - Ultra-compact for maximum content density */
 .theme-grayscale input,
 .theme-grayscale select,
 .theme-grayscale textarea,
 .theme-grayscale button {
-  padding: 0.25rem 0.5rem;
+  padding: 0.0625rem 0.125rem;
   font-size: var(--font-size-sm);
 }
 
-/* Modal dialogs - Optimized for content density */
+/* Modal dialogs - Ultra-compact for maximum content density */
 .theme-grayscale .modal-content {
-  padding: 0.75rem;
+  padding: 0.25rem;
 }
 
 .theme-grayscale .modal-header {
-  padding: 0.5rem 0.75rem;
+  padding: 0.125rem 0.25rem;
 }
 
 .theme-grayscale .modal-body {
-  padding: 0.5rem 0.75rem;
+  padding: 0.125rem 0.25rem;
 }
 
 .theme-grayscale .modal-footer {
-  padding: 0.5rem 0.75rem;
+  padding: 0.125rem 0.25rem;
 }
 
-/* Navigation - Optimized for content density */
+/* Navigation - Ultra-compact for maximum content density */
 .theme-grayscale nav {
-  padding: 0.25rem 0.5rem;
+  padding: 0.0625rem 0.125rem;
 }
 
 .theme-grayscale .nav-item {
-  padding: 0.25rem 0.5rem;
+  padding: 0.0625rem 0.125rem;
 }
 
-/* Sidebar - Optimized for content density */
+/* Sidebar - Ultra-compact for maximum content density */
 .theme-grayscale .sidebar {
-  padding: 0.5rem;
+  padding: 0.125rem;
 }
 
 .theme-grayscale .sidebar-item {
-  padding: 0.25rem 0.5rem;
-  margin-bottom: 0.25rem;
+  padding: 0.0625rem 0.125rem;
+  margin-bottom: 0.0625rem;
 }
 
 .theme-grayscale .sidebar-section {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.125rem;
+}
+
+/* Lists - Ultra-compact for maximum content density */
+.theme-grayscale ul,
+.theme-grayscale ol {
+  margin: 0.125rem 0;
+  padding-left: 0.5rem;
+}
+
+.theme-grayscale li {
+  margin-bottom: 0.0625rem;
+  line-height: 1.1;
+}
+
+.theme-grayscale .list-item,
+.theme-grayscale .list-group-item {
+  padding: 0.0625rem 0.125rem;
+  margin-bottom: 0.0625rem;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Project cards - Ultra-compact for maximum content density */
+.theme-grayscale .project-card {
+  padding: 0.125rem;
+  margin-bottom: 0.125rem;
+  border: 1px solid var(--border);
+}
+
+.theme-grayscale .project-card-header {
+  padding: 0.0625rem 0.125rem;
+  margin-bottom: 0.0625rem;
+}
+
+.theme-grayscale .project-card-body {
+  padding: 0.0625rem 0.125rem;
+}
+
+.theme-grayscale .project-card-footer {
+  padding: 0.0625rem 0.125rem;
+  margin-top: 0.0625rem;
+}
+
+/* Category list - Ultra-compact for maximum content density */
+.theme-grayscale .category-list {
+  margin: 0.125rem 0;
+}
+
+.theme-grayscale .category-item {
+  padding: 0.0625rem 0.125rem;
+  margin-bottom: 0.0625rem;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Data tables - Ultra-compact for maximum content density */
+.theme-grayscale .data-table {
+  font-size: var(--font-size-xs);
+  line-height: 1.1;
+}
+
+.theme-grayscale .data-table th,
+.theme-grayscale .data-table td {
+  padding: 0.0625rem 0.125rem;
+}
+
+.theme-grayscale .data-table tr {
+  height: 1.25rem;
+}
+
+/* Statistics cards - Ultra-compact for maximum content density */
+.theme-grayscale .stat-card {
+  padding: 0.125rem;
+  margin-bottom: 0.125rem;
+}
+
+.theme-grayscale .stat-value {
+  font-size: var(--font-size-xl);
+  margin: 0.0625rem 0;
+}
+
+.theme-grayscale .stat-label {
+  font-size: var(--font-size-xs);
+  margin: 0;
+}
+
+/* Projects grid - Ultra-compact for maximum content density */
+.theme-grayscale .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 0.125rem;
+  padding: 0.125rem;
+}
+
+.theme-grayscale .project-logo-container {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 0.0625rem;
+}
+
+.theme-grayscale .project-logo {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.theme-grayscale .project-name {
+  font-size: var(--font-size-xs);
+  margin: 0.0625rem 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.theme-grayscale .project-category {
+  font-size: var(--font-size-xs);
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Corporate project cards - Ultra-compact for maximum content density */
+.theme-grayscale .corporate-project-card {
+  padding: 0.125rem;
+  margin-bottom: 0.125rem;
+  height: auto;
+  min-height: 80px;
+}
+
+.theme-grayscale .corporate-project-logo-container {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 0.0625rem;
+}
+
+.theme-grayscale .corporate-project-name {
+  font-size: var(--font-size-xs);
+  margin: 0.0625rem 0;
+}
+
+.theme-grayscale .corporate-project-category {
+  font-size: var(--font-size-xs);
+  margin: 0;
+}
+
+.theme-grayscale .corporate-project-hover-overlay {
+  padding: 0.0625rem;
 }
 
 /* Transitions */
