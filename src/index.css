@@ -85,16 +85,18 @@
   --border: #bfdbfe;
 }
 
-/* Grayscale theme - Updated to match aeamcp.com */
+/* Grayscale theme - Updated for content density */
 .theme-grayscale {
   /* Typography */
   --font-family: 'IBM Plex Mono', monospace;
-  --font-size-md: 1rem;
-  --font-size-lg: 1.125rem;
-  --font-size-xl: 1.25rem;
-  --font-size-2xl: 1.5rem;
-  --font-size-3xl: 1.875rem;
-  --font-size-4xl: 2.25rem;
+  --font-size-xs: 0.7rem;
+  --font-size-sm: 0.8rem;
+  --font-size-md: 0.9rem;
+  --font-size-lg: 1rem;
+  --font-size-xl: 1.1rem;
+  --font-size-2xl: 1.25rem;
+  --font-size-3xl: 1.5rem;
+  --font-size-4xl: 1.75rem;
   
   /* Colors */
   --primary: #1a1a1a;
@@ -115,18 +117,18 @@
   
   /* Border and shadow */
   --border: #d9d9d9;
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 1px 3px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 1px 4px rgba(0, 0, 0, 0.1);
+  --shadow-sm: 0 1px 1px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 1px 2px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 1px 3px rgba(0, 0, 0, 0.1);
   
-  /* Spacing */
-  --spacing-1: 0.25rem;
-  --spacing-2: 0.5rem;
-  --spacing-3: 0.75rem;
-  --spacing-4: 1rem;
-  --spacing-5: 1.5rem;
-  --spacing-6: 2rem;
-  --spacing-8: 3rem;
+  /* Spacing - Reduced for content density */
+  --spacing-1: 0.125rem;
+  --spacing-2: 0.25rem;
+  --spacing-3: 0.5rem;
+  --spacing-4: 0.75rem;
+  --spacing-5: 1rem;
+  --spacing-6: 1.25rem;
+  --spacing-8: 1.5rem;
   
   /* Border radius */
   --radius-sm: 0;
@@ -144,9 +146,9 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Grayscale theme specific styles */
+/* Grayscale theme specific styles - Optimized for content density */
 .theme-grayscale body {
-  line-height: 1.6;
+  line-height: 1.4;
   letter-spacing: -0.01em;
 }
 
@@ -160,20 +162,20 @@ body {
   font-weight: 700;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
 .theme-grayscale h1 {
   font-size: var(--font-size-4xl);
   border-bottom: 1px solid var(--border);
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
 }
 
 .theme-grayscale h2 {
   font-size: var(--font-size-3xl);
   border-bottom: 1px solid var(--border);
-  padding-bottom: 0.25rem;
+  padding-bottom: 0.125rem;
 }
 
 .theme-grayscale h3 {
@@ -181,7 +183,7 @@ body {
 }
 
 .theme-grayscale p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .theme-grayscale a {
@@ -199,20 +201,20 @@ body {
 .theme-grayscale pre {
   font-family: var(--font-family);
   background-color: var(--surface-alt);
-  padding: 0.2em 0.4em;
+  padding: 0.1em 0.2em;
   border-radius: 0;
   font-size: 0.9em;
 }
 
 .theme-grayscale pre {
-  padding: 1rem;
+  padding: 0.5rem;
   overflow-x: auto;
   border: 1px solid var(--border);
 }
 
 .theme-grayscale blockquote {
-  border-left: 4px solid var(--border);
-  padding-left: 1rem;
+  border-left: 2px solid var(--border);
+  padding-left: 0.5rem;
   margin-left: 0;
   color: var(--secondary);
 }
@@ -220,14 +222,14 @@ body {
 .theme-grayscale table {
   width: 100%;
   border-collapse: collapse;
-  margin: 2rem 0;
-  font-size: var(--font-size-sm);
+  margin: 1rem 0;
+  font-size: var(--font-size-xs);
 }
 
 .theme-grayscale th, 
 .theme-grayscale td {
   border: 1px solid var(--border);
-  padding: 0.75rem;
+  padding: 0.25rem 0.5rem;
   text-align: left;
 }
 
@@ -236,7 +238,7 @@ body {
   font-weight: 600;
 }
 
-/* Layout */
+/* Layout - Optimized for content density */
 .enterprise-layout {
   display: flex;
   flex-direction: column;
@@ -245,28 +247,28 @@ body {
 
 .enterprise-main {
   flex: 1;
-  padding: 1.5rem;
+  padding: 1rem;
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
 }
 
 .theme-grayscale .enterprise-main {
-  padding: 2rem;
-  max-width: 1200px;
+  padding: 0.75rem;
+  max-width: 1400px;
 }
 
 @media (max-width: 768px) {
   .enterprise-main {
-    padding: 1rem;
+    padding: 0.5rem;
   }
   
   .theme-grayscale .enterprise-main {
-    padding: 1.5rem;
+    padding: 0.5rem;
   }
 }
 
-/* Enterprise Card */
+/* Enterprise Card - Optimized for content density */
 .enterprise-card {
   background-color: var(--surface);
   border-radius: var(--radius-lg);
@@ -279,8 +281,8 @@ body {
   border-radius: 0;
   border: 1px solid var(--border);
   box-shadow: var(--shadow-sm);
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .enterprise-card:hover {
@@ -289,6 +291,67 @@ body {
 
 .theme-grayscale .enterprise-card:hover {
   box-shadow: var(--shadow-md);
+}
+
+/* Grid layouts - Optimized for content density */
+.theme-grayscale .grid {
+  gap: 0.5rem;
+}
+
+.theme-grayscale .grid-cols-1,
+.theme-grayscale .grid-cols-2,
+.theme-grayscale .grid-cols-3,
+.theme-grayscale .grid-cols-4 {
+  gap: 0.5rem;
+}
+
+/* Form elements - Optimized for content density */
+.theme-grayscale input,
+.theme-grayscale select,
+.theme-grayscale textarea,
+.theme-grayscale button {
+  padding: 0.25rem 0.5rem;
+  font-size: var(--font-size-sm);
+}
+
+/* Modal dialogs - Optimized for content density */
+.theme-grayscale .modal-content {
+  padding: 0.75rem;
+}
+
+.theme-grayscale .modal-header {
+  padding: 0.5rem 0.75rem;
+}
+
+.theme-grayscale .modal-body {
+  padding: 0.5rem 0.75rem;
+}
+
+.theme-grayscale .modal-footer {
+  padding: 0.5rem 0.75rem;
+}
+
+/* Navigation - Optimized for content density */
+.theme-grayscale nav {
+  padding: 0.25rem 0.5rem;
+}
+
+.theme-grayscale .nav-item {
+  padding: 0.25rem 0.5rem;
+}
+
+/* Sidebar - Optimized for content density */
+.theme-grayscale .sidebar {
+  padding: 0.5rem;
+}
+
+.theme-grayscale .sidebar-item {
+  padding: 0.25rem 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.theme-grayscale .sidebar-section {
+  margin-bottom: 0.5rem;
 }
 
 /* Transitions */
