@@ -41,12 +41,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ id, name, category, logo, onC
         )}
       </div>
       
-      <h3 className="corporate-project-name">{name}</h3>
-      <div className="corporate-project-category">{category}</div>
-      
-      <div className="corporate-project-hover-overlay">
-        <FiInfo className="corporate-project-info-icon" />
-        <span className="corporate-project-view-details">View Details</span>
+      <div className="corporate-project-text">
+        <h3 className="corporate-project-name">{name}</h3>
+        <div className="corporate-project-category">{category}</div>
       </div>
     </div>
   );

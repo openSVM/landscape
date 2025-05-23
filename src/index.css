@@ -374,30 +374,33 @@ body {
   border-bottom: 1px solid var(--border);
 }
 
-/* Project cards - Ultra-compact for maximum content density */
+/* Project cards - Ultra-compact horizontal layout */
 .theme-grayscale .project-card {
-  padding: 0.0625rem;
-  margin-bottom: 0.0625rem;
+  padding: 0;
+  margin: 0;
   border: 1px solid var(--border);
-  height: 40px;
+  height: 24px;
+  min-height: 24px;
+  max-height: 24px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .theme-grayscale .project-card-header {
-  padding: 0.03125rem 0.0625rem;
-  margin-bottom: 0.03125rem;
+  padding: 0;
+  margin: 0;
 }
 
 .theme-grayscale .project-card-body {
-  padding: 0.03125rem 0.0625rem;
+  padding: 0;
+  margin: 0;
 }
 
 .theme-grayscale .project-card-footer {
-  padding: 0.03125rem 0.0625rem;
-  margin-top: 0.03125rem;
+  padding: 0;
+  margin: 0;
 }
 
 /* Category list - Ultra-compact for maximum content density */
@@ -445,16 +448,17 @@ body {
 /* Projects grid - Ultra-compact for maximum content density */
 .theme-grayscale .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-  gap: 0.03125rem;
-  padding: 0.03125rem;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  gap: 2px;
+  padding: 0;
 }
 
 .theme-grayscale .project-logo-container {
-  width: 16px;
-  height: 16px;
-  margin-bottom: 0.03125rem;
+  width: 12px;
+  height: 12px;
+  margin: 0 4px 0 0;
   display: inline-flex;
+  flex-shrink: 0;
 }
 
 .theme-grayscale .project-logo {
@@ -464,7 +468,7 @@ body {
 
 .theme-grayscale .project-name {
   font-size: var(--font-size-xs);
-  margin: 0.03125rem 0;
+  margin: 0 4px 0 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -482,28 +486,37 @@ body {
   line-height: 1;
 }
 
-/* Corporate project cards - Ultra-compact for maximum content density */
+/* Corporate project cards - Ultra-compact horizontal layout */
 .theme-grayscale .corporate-project-card {
-  padding: 0.0625rem;
-  margin-bottom: 0.0625rem;
-  height: auto;
-  min-height: 40px;
-  max-height: 40px;
+  padding: 2px;
+  margin: 0;
+  height: 24px;
+  min-height: 24px;
+  max-height: 24px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .theme-grayscale .corporate-project-logo-container {
-  width: 16px;
-  height: 16px;
-  margin-bottom: 0.03125rem;
+  width: 12px;
+  height: 12px;
+  margin: 0 4px 0 0;
+  flex-shrink: 0;
+}
+
+.theme-grayscale .corporate-project-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  flex: 1;
 }
 
 .theme-grayscale .corporate-project-name {
   font-size: var(--font-size-xs);
-  margin: 0.03125rem 0;
+  margin: 0 4px 0 0;
   line-height: 1;
   max-width: 100%;
   white-space: nowrap;
@@ -522,7 +535,7 @@ body {
 }
 
 .theme-grayscale .corporate-project-hover-overlay {
-  padding: 0.03125rem;
+  display: none;
 }
 
 /* Transitions */
