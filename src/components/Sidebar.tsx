@@ -140,7 +140,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeSection, onSectionChange }) => 
         marginTop: 'auto', 
         padding: '16px 8px',
         borderTop: isDark ? '1px solid #334155' : '1px solid #e2e8f0',
-        marginTop: '24px'
+        marginBottom: '0' // Changed from duplicate marginTop to marginBottom
       }}>
         <div className="theme-indicator" style={{ 
           fontSize: '14px', 
