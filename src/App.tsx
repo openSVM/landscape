@@ -25,6 +25,27 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [commandPaletteOpen, setCommandPaletteOpen] = useState(false);
 
+  // Handle URL hash for navigation
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash.replace('#', '');
+      if (['dashboard', 'projects', 'statistics', 'categories'].includes(hash)) {
+        setActiveView(hash);
+      } else if (!hash) {
+        setActiveView('dashboard');
+      }
+    };
+
+    // Set initial view based on URL hash
+    handleHashChange();
+
+    // Listen for hash changes
+    window.addEventListener('hashchange', handleHashChange);
+    return () => {
+      window.removeEventListener('hashchange', handleHashChange);
+    };
+  }, []);
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -210,43 +231,40 @@ function App() {
               )}
             </div>
             
-            <div id="dashboard" className={activeView === 'dashboard' ? 'block' : 'hidden'}>
+            {activeView === 'dashboard' && (
               <Dashboard 
                 projects={filteredProjects}
                 categories={categories}
               />
-            </div>
+            )}
             
-            <div id="statistics" className={activeView === 'statistics' ? 'block' : 'hidden'}>
+            {activeView === 'statistics' && (
               <StatisticsPanel 
                 projects={projects}
                 categories={categories}
               />
-            </div>
+            )}
             
-            <div id="projects" className={activeView === 'projects' ? 'block' : 'hidden'}>
+            {activeView === 'projects' && (
               <ProjectsGrid 
                 projects={filteredProjects}
                 loading={loading}
               />
-            </div>
+            )}
 
-            <div id="categories" className={activeView === 'categories' ? 'block' : 'hidden'}>
-              <div className="p-4 rounded-lg border" style={{ 
-                backgroundColor: 'var(--surface)',
-                borderColor: 'var(--border)'
-              }}>
-                <h2 className="text-xl font-semibold mb-4" style={{ color: 'var(--primary)' }}>Categories</h2>
+            {activeView === 'categories' && (
+              <div className="enterprise-card p-6 mb-8">
+                <h2 className="text-2xl font-semibold mb-4">Categories</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {categories.map((category) => (
-                    <div key={category.name} className="enterprise-card p-4">
-                      <h3 className="text-lg font-medium mb-2" style={{ color: 'var(--primary)' }}>{category.name}</h3>
-                      <p className="text-sm mb-3" style={{ color: 'var(--primary-light)' }}>{category.count} projects</p>
+                    <div key={category.name} className="enterprise-card p-4 shadow-sm">
+                      <h3 className="text-lg font-medium mb-2">{category.name}</h3>
+                      <p className="text-sm mb-3 text-gray-500">{category.count} projects</p>
                       <div className="space-y-1">
                         {category.subcategories?.map((sub) => (
                           <div key={sub.name} className="flex justify-between text-sm">
-                            <span style={{ color: 'var(--primary)' }}>{sub.name}</span>
-                            <span style={{ color: 'var(--primary-light)' }}>{sub.count}</span>
+                            <span>{sub.name}</span>
+                            <span className="text-gray-500">{sub.count}</span>
                           </div>
                         ))}
                       </div>
@@ -254,7 +272,7 @@ function App() {
                   ))}
                 </div>
               </div>
-            </div>
+            )}
           </main>
         </div>
         
