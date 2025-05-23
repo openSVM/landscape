@@ -1,0 +1,178 @@
+/* Enhanced Card Styling */
+.enterprise-card {
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+  background-color: var(--surface);
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.enterprise-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-color: var(--accent-light);
+}
+
+.card-header {
+  border-bottom: 1px solid var(--border);
+  padding: 0.75rem 1rem;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+/* Interactive Elements */
+button, 
+.btn,
+a.nav-link,
+.interactive-element {
+  position: relative;
+  transition: all 0.2s ease;
+  overflow: hidden;
+}
+
+button:hover, 
+.btn:hover,
+a.nav-link:hover,
+.interactive-element:hover {
+  transform: translateY(-1px);
+}
+
+button:active, 
+.btn:active,
+a.nav-link:active,
+.interactive-element:active {
+  transform: translateY(0);
+}
+
+button:focus, 
+.btn:focus,
+a.nav-link:focus,
+.interactive-element:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--accent-light);
+}
+
+/* Hover lift effect */
+.hover-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Statistics and metrics styling */
+.stat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  margin-right: 0.75rem;
+  background-color: var(--accent-light);
+  color: var(--text-on-accent);
+  opacity: 0.9;
+}
+
+.stat-title {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--primary-light);
+  margin-bottom: 0.25rem;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary);
+  line-height: 1.2;
+}
+
+.stat-desc {
+  font-size: 0.75rem;
+  color: var(--primary-light);
+  margin-top: 0.25rem;
+}
+
+/* Progress bars */
+.progress-bar {
+  height: 0.5rem;
+  border-radius: 9999px;
+  overflow: hidden;
+  background-color: var(--surface-alt);
+}
+
+.progress-bar-fill {
+  height: 100%;
+  border-radius: 9999px;
+  background-color: var(--accent);
+  transition: width 0.5s ease;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .enterprise-card {
+    padding: 0.75rem;
+  }
+  
+  .stat-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .stat-value {
+    font-size: 1.25rem;
+  }
+  
+  .grid-cols-3 {
+    grid-template-columns: 1fr;
+  }
+  
+  .card-header {
+    padding: 0.5rem 0.75rem;
+  }
+  
+  .card-body {
+    padding: 0.75rem;
+  }
+}
+
+/* Touch-friendly targets for mobile */
+@media (max-width: 640px) {
+  button, 
+  .btn,
+  a.nav-link,
+  .interactive-element {
+    min-height: 2.5rem;
+    padding: 0.5rem 0.75rem;
+  }
+  
+  .filter-container select {
+    height: 2.5rem;
+    padding: 0 0.75rem;
+  }
+}
+
+/* Animation for state changes */
+.fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.slide-in {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from { transform: translateY(10px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}

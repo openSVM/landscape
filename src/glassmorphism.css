@@ -1,0 +1,259 @@
+/* Glassmorphism Effects for Solana Ecosystem Landscape
+ * This file contains the CSS variables and utility classes for implementing
+ * a consistent glassmorphism effect across the application
+ */
+
+:root {
+  /* Glass effect base variables */
+  --glass-bg-opacity-light: 0.7;
+  --glass-bg-opacity-dark: 0.2;
+  --glass-blur: 12px;
+  --glass-border-opacity: 0.1;
+  --glass-shadow-opacity: 0.05;
+  --glass-highlight-opacity: 0.1;
+  
+  /* Light theme glass variables */
+  --glass-bg-light: rgba(255, 255, 255, var(--glass-bg-opacity-light));
+  --glass-border-light: rgba(255, 255, 255, var(--glass-border-opacity));
+  --glass-shadow-light: rgba(0, 0, 0, var(--glass-shadow-opacity));
+  --glass-highlight-light: rgba(255, 255, 255, var(--glass-highlight-opacity));
+  
+  /* Dark theme glass variables */
+  --glass-bg-dark: rgba(30, 30, 30, var(--glass-bg-opacity-dark));
+  --glass-border-dark: rgba(255, 255, 255, var(--glass-border-opacity));
+  --glass-shadow-dark: rgba(0, 0, 0, var(--glass-shadow-opacity));
+  --glass-highlight-dark: rgba(255, 255, 255, var(--glass-highlight-opacity));
+  
+  /* Blue theme glass variables */
+  --glass-bg-blue: rgba(239, 246, 255, var(--glass-bg-opacity-light));
+  --glass-border-blue: rgba(191, 219, 254, var(--glass-border-opacity));
+  --glass-shadow-blue: rgba(30, 58, 138, var(--glass-shadow-opacity));
+  --glass-highlight-blue: rgba(255, 255, 255, var(--glass-highlight-opacity));
+}
+
+/* Default glass effect (light theme) */
+.glass-effect {
+  background: var(--glass-bg-light);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border-light);
+  box-shadow: 0 8px 32px 0 var(--glass-shadow-light);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Dark theme glass effect */
+.theme-dark .glass-effect {
+  background: var(--glass-bg-dark);
+  border: 1px solid var(--glass-border-dark);
+  box-shadow: 0 8px 32px 0 var(--glass-shadow-dark);
+}
+
+/* Blue theme glass effect */
+.theme-blue .glass-effect {
+  background: var(--glass-bg-blue);
+  border: 1px solid var(--glass-border-blue);
+  box-shadow: 0 8px 32px 0 var(--glass-shadow-blue);
+}
+
+/* Glass effect hover state */
+.glass-effect:hover {
+  box-shadow: 0 10px 40px 0 var(--glass-shadow-light);
+  transform: translateY(-2px);
+}
+
+.theme-dark .glass-effect:hover {
+  box-shadow: 0 10px 40px 0 var(--glass-shadow-dark);
+}
+
+.theme-blue .glass-effect:hover {
+  box-shadow: 0 10px 40px 0 var(--glass-shadow-blue);
+}
+
+/* Glass effect focus state */
+.glass-effect:focus-within {
+  box-shadow: 0 0 0 2px var(--accent);
+  border-color: var(--accent);
+}
+
+/* Glass effect for form inputs */
+.glass-input {
+  background: transparent;
+  border: none;
+  color: var(--primary);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  transition: all 0.3s ease;
+}
+
+.glass-input:focus {
+  outline: none;
+}
+
+/* Glass effect for modals */
+.glass-modal-overlay {
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.glass-modal {
+  background: var(--glass-bg-light);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border-light);
+  box-shadow: 0 25px 50px -12px var(--glass-shadow-light);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.theme-dark .glass-modal {
+  background: var(--glass-bg-dark);
+  border: 1px solid var(--glass-border-dark);
+  box-shadow: 0 25px 50px -12px var(--glass-shadow-dark);
+}
+
+.theme-blue .glass-modal {
+  background: var(--glass-bg-blue);
+  border: 1px solid var(--glass-border-blue);
+  box-shadow: 0 25px 50px -12px var(--glass-shadow-blue);
+}
+
+/* Glass effect for command palette */
+.glass-command-palette {
+  background: var(--glass-bg-light);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border-light);
+  box-shadow: 0 25px 50px -12px var(--glass-shadow-light);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.theme-dark .glass-command-palette {
+  background: var(--glass-bg-dark);
+  border: 1px solid var(--glass-border-dark);
+  box-shadow: 0 25px 50px -12px var(--glass-shadow-dark);
+}
+
+.theme-blue .glass-command-palette {
+  background: var(--glass-bg-blue);
+  border: 1px solid var(--glass-border-blue);
+  box-shadow: 0 25px 50px -12px var(--glass-shadow-blue);
+}
+
+/* Glass effect for buttons */
+.glass-button {
+  background: var(--glass-bg-light);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border-light);
+  color: var(--primary);
+  transition: all 0.3s ease;
+}
+
+.theme-dark .glass-button {
+  background: var(--glass-bg-dark);
+  border: 1px solid var(--glass-border-dark);
+}
+
+.theme-blue .glass-button {
+  background: var(--glass-bg-blue);
+  border: 1px solid var(--glass-border-blue);
+}
+
+.glass-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+.theme-dark .glass-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Glass effect for cards */
+.glass-card {
+  background: var(--glass-bg-light);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border-light);
+  box-shadow: 0 8px 32px 0 var(--glass-shadow-light);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.theme-dark .glass-card {
+  background: var(--glass-bg-dark);
+  border: 1px solid var(--glass-border-dark);
+  box-shadow: 0 8px 32px 0 var(--glass-shadow-dark);
+}
+
+.theme-blue .glass-card {
+  background: var(--glass-bg-blue);
+  border: 1px solid var(--glass-border-blue);
+  box-shadow: 0 8px 32px 0 var(--glass-shadow-blue);
+}
+
+.glass-card:hover {
+  box-shadow: 0 10px 40px 0 var(--glass-shadow-light);
+  transform: translateY(-2px);
+}
+
+.theme-dark .glass-card:hover {
+  box-shadow: 0 10px 40px 0 var(--glass-shadow-dark);
+}
+
+.theme-blue .glass-card:hover {
+  box-shadow: 0 10px 40px 0 var(--glass-shadow-blue);
+}
+
+/* Glass effect for dropdown menus */
+.glass-dropdown {
+  background: var(--glass-bg-light);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border-light);
+  box-shadow: 0 10px 25px -5px var(--glass-shadow-light);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.theme-dark .glass-dropdown {
+  background: var(--glass-bg-dark);
+  border: 1px solid var(--glass-border-dark);
+  box-shadow: 0 10px 25px -5px var(--glass-shadow-dark);
+}
+
+.theme-blue .glass-dropdown {
+  background: var(--glass-bg-blue);
+  border: 1px solid var(--glass-border-blue);
+  box-shadow: 0 10px 25px -5px var(--glass-shadow-blue);
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  .glass-effect,
+  .glass-effect:hover,
+  .glass-input,
+  .glass-button,
+  .glass-card,
+  .glass-card:hover {
+    transition: none;
+    transform: none;
+  }
+}
+
+/* High contrast mode adjustments */
+@media (forced-colors: active) {
+  .glass-effect,
+  .glass-input,
+  .glass-modal,
+  .glass-command-palette,
+  .glass-button,
+  .glass-card,
+  .glass-dropdown {
+    border: 2px solid ButtonText;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+}

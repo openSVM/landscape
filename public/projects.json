@@ -1,0 +1,2263 @@
+{
+  "categories": [
+    {
+      "name": "DeFi",
+      "subcategories": [
+        {
+          "name": "DEXs",
+          "projects": [
+            {
+              "name": "Orca",
+              "logo": "orca.png",
+              "github": "https://github.com/orca-so",
+              "twitter": "https://twitter.com/orca_so",
+              "telegram": "https://t.me/orca_so"
+            },
+            {
+              "name": "Raydium",
+              "logo": "raydium.png",
+              "github": "https://github.com/raydium-io",
+              "twitter": "https://twitter.com/RaydiumProtocol",
+              "telegram": "https://t.me/raydiumprotocol"
+            },
+            {
+              "name": "Jupiter",
+              "logo": "jupiter.png",
+              "github": "https://github.com/jup-ag",
+              "twitter": "https://twitter.com/JupiterExchange",
+              "telegram": "https://t.me/jupiter_exchange"
+            },
+            {
+              "name": "Meteora",
+              "logo": "meteora.png",
+              "github": "https://github.com/meteora-ag",
+              "twitter": "https://twitter.com/MeteoraAG",
+              "telegram": "https://t.me/meteora_official"
+            },
+            {
+              "name": "Invariant",
+              "logo": "invariant.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "GooseFX",
+              "logo": "goosefx.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "FluxBeam",
+              "logo": "fluxbeam.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Phoenix",
+              "logo": "phoenix.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            }
+          ]
+        },
+        {
+          "name": "Lending",
+          "projects": [
+            {
+              "name": "Solend",
+              "logo": "solend.png",
+              "github": "https://github.com/solendprotocol",
+              "twitter": "https://twitter.com/solendprotocol",
+              "telegram": "https://t.me/solendprotocol"
+            },
+            {
+              "name": "Larix",
+              "logo": "larix.png",
+              "github": "https://github.com/ProjectLarix",
+              "twitter": "https://twitter.com/ProjectLarix",
+              "telegram": "https://t.me/projectlarix"
+            },
+            {
+              "name": "Maple",
+              "logo": "maple.png",
+              "github": "https://github.com/maple-labs",
+              "twitter": "https://twitter.com/maplefinance",
+              "telegram": "https://t.me/maplefinance"
+            },
+            {
+              "name": "Marginfi",
+              "logo": "marginfi.png",
+              "github": "https://github.com/mrgnlabs",
+              "twitter": "https://twitter.com/marginfi",
+              "telegram": "https://t.me/marginfi"
+            },
+            {
+              "name": "Kamino",
+              "logo": "kamino.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            }
+          ]
+        },
+        {
+          "name": "Yield",
+          "projects": [
+            {
+              "name": "Marinade",
+              "logo": "marinade.png",
+              "github": "https://github.com/marinade-finance",
+              "twitter": "https://twitter.com/MarinadeFinance",
+              "telegram": "https://t.me/marinadefinance"
+            },
+            {
+              "name": "Picus",
+              "logo": "picus.png",
+              "github": "",
+              "twitter": "https://twitter.com/PicusFinance",
+              "telegram": ""
+            },
+            {
+              "name": "Lido",
+              "logo": "lido.png",
+              "github": "https://github.com/lidofinance",
+              "twitter": "https://twitter.com/lidofinance",
+              "telegram": "https://t.me/lidofinance"
+            },
+            {
+              "name": "Kamino",
+              "logo": "kamino.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "BlazStake",
+              "logo": "blazstake.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            }
+          ]
+        },
+        {
+          "name": "Liquid Staking",
+          "projects": [
+            {
+              "name": "Marinade",
+              "logo": "marinade.png",
+              "github": "https://github.com/marinade-finance",
+              "twitter": "https://twitter.com/MarinadeFinance",
+              "telegram": "https://t.me/marinadefinance"
+            },
+            {
+              "name": "Jito",
+              "logo": "jito.png",
+              "github": "https://github.com/jito-foundation",
+              "twitter": "https://twitter.com/jito_sol",
+              "telegram": "https://t.me/jito_sol"
+            },
+            {
+              "name": "USDC",
+              "logo": "usdc.png",
+              "github": "https://github.com/circle-com",
+              "twitter": "https://twitter.com/circle",
+              "telegram": "https://t.me/circle_official"
+            },
+            {
+              "name": "USDT",
+              "logo": "usdt.png",
+              "github": "https://github.com/tether",
+              "twitter": "https://twitter.com/Tether_to",
+              "telegram": "https://t.me/tether_official"
+            },
+            {
+              "name": "PYUSD",
+              "logo": "pyusd.png",
+              "github": "",
+              "twitter": "https://twitter.com/PayPal",
+              "telegram": ""
+            }
+          ]
+        },
+        {
+          "name": "Stables",
+          "projects": [
+            {
+              "name": "USDC",
+              "logo": "usdc.png",
+              "github": "https://github.com/circle-com",
+              "twitter": "https://twitter.com/circle",
+              "telegram": "https://t.me/circle_official"
+            },
+            {
+              "name": "USDT",
+              "logo": "usdt.png",
+              "github": "https://github.com/tether",
+              "twitter": "https://twitter.com/Tether_to",
+              "telegram": "https://t.me/tether_official"
+            },
+            {
+              "name": "PYUSD",
+              "logo": "pyusd.png",
+              "github": "",
+              "twitter": "https://twitter.com/PayPal",
+              "telegram": ""
+            }
+          ]
+        },
+        {
+          "name": "RWAs",
+          "projects": [
+            {
+              "name": "Sanctum",
+              "logo": "sanctum.png",
+              "github": "",
+              "twitter": "https://twitter.com/sanctumfi",
+              "telegram": ""
+            },
+            {
+              "name": "Paxos",
+              "logo": "paxos.png",
+              "github": "https://github.com/paxosglobal",
+              "twitter": "https://twitter.com/PaxosGlobal",
+              "telegram": ""
+            },
+            {
+              "name": "Maple",
+              "logo": "maple.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Ondo",
+              "logo": "ondo.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Homebase",
+              "logo": "homebase.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "RAXUS",
+              "logo": "raxus.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "etonts",
+              "logo": "etonts.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            }
+          ]
+        },
+        {
+          "name": "DEX Aggs + Tools",
+          "projects": [
+            {
+              "name": "Jupiter",
+              "logo": "jupiter.png",
+              "github": "https://github.com/jup-ag",
+              "twitter": "https://twitter.com/JupiterExchange",
+              "telegram": "https://t.me/jupiter_exchange"
+            },
+            {
+              "name": "Birdeye",
+              "logo": "birdeye.png",
+              "github": "",
+              "twitter": "https://twitter.com/birdeye_so",
+              "telegram": "https://t.me/birdeye_so"
+            },
+            {
+              "name": "Triton",
+              "logo": "triton.png",
+              "github": "",
+              "twitter": "https://twitter.com/tritonfi",
+              "telegram": ""
+            },
+            {
+              "name": "DFlow",
+              "logo": "dflow.png",
+              "github": "",
+              "twitter": "https://twitter.com/dflow_xyz",
+              "telegram": ""
+            },
+            {
+              "name": "Tensor",
+              "logo": "tensor.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Tashi",
+              "logo": "tashi.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            }
+          ]
+        },
+        {
+          "name": "CEXs",
+          "projects": [
+            {
+              "name": "Backpack",
+              "logo": "backpack.png",
+              "github": "https://github.com/backpack-exchange",
+              "twitter": "https://twitter.com/xNFT_Backpack",
+              "telegram": "https://t.me/xNFT_Backpack"
+            },
+            {
+              "name": "Solayer",
+              "logo": "solayer.png",
+              "github": "",
+              "twitter": "https://twitter.com/solayer_io",
+              "telegram": ""
+            },
+            {
+              "name": "Jito",
+              "logo": "jito.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            }
+          ]
+        },
+        {
+          "name": "Restaking",
+          "projects": [
+            {
+              "name": "Marinade",
+              "logo": "marinade.png",
+              "github": "https://github.com/marinade-finance",
+              "twitter": "https://twitter.com/MarinadeFinance",
+              "telegram": "https://t.me/marinadefinance"
+            },
+            {
+              "name": "Picus",
+              "logo": "picus.png",
+              "github": "",
+              "twitter": "https://twitter.com/PicusFinance",
+              "telegram": ""
+            },
+            {
+              "name": "Orca",
+              "logo": "orca.png",
+              "github": "https://github.com/orca-so",
+              "twitter": "https://twitter.com/orca_so",
+              "telegram": "https://t.me/orca_so"
+            }
+          ]
+        },
+        {
+          "name": "Derivs/Perps",
+          "projects": [
+            {
+              "name": "Drift",
+              "logo": "drift.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Mango",
+              "logo": "mango.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Zeta",
+              "logo": "zeta.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Hxro",
+              "logo": "hxro.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Flash Trade",
+              "logo": "flashtrade.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Consumer",
+      "subcategories": [
+        {
+          "name": "Memecoins",
+          "projects": [
+            {
+              "name": "Photon",
+              "logo": "photon.png",
+              "github": "",
+              "twitter": "https://twitter.com/photonSOL",
+              "telegram": "https://t.me/photonSOL"
+            },
+            {
+              "name": "Bonk",
+              "logo": "bonk.png",
+              "github": "",
+              "twitter": "https://twitter.com/bonk_inu",
+              "telegram": "https://t.me/bonk_inu"
+            },
+            {
+              "name": "SAMO",
+              "logo": "samo.png",
+              "github": "",
+              "twitter": "https://twitter.com/samoyedcoin",
+              "telegram": "https://t.me/samoyedcoin"
+            },
+            {
+              "name": "Froggers",
+              "logo": "froggers.png",
+              "github": "",
+              "twitter": "https://twitter.com/frogsolana",
+              "telegram": "https://t.me/frogsolana"
+            },
+            {
+              "name": "CHAOS",
+              "logo": "chaos.png",
+              "github": "",
+              "twitter": "https://twitter.com/chaos_token",
+              "telegram": "https://t.me/chaos_token"
+            }
+          ]
+        },
+        {
+          "name": "NFT Projects",
+          "projects": [
+            {
+              "name": "Mad Lads",
+              "logo": "madlads.png",
+              "github": "",
+              "twitter": "https://twitter.com/MadLads",
+              "telegram": ""
+            },
+            {
+              "name": "Tensorians",
+              "logo": "tensorians.png",
+              "github": "",
+              "twitter": "https://twitter.com/tensorians",
+              "telegram": ""
+            },
+            {
+              "name": "Claynosaurz",
+              "logo": "claynosaurz.png",
+              "github": "",
+              "twitter": "https://twitter.com/claynosaurz",
+              "telegram": ""
+            },
+            {
+              "name": "Transdimensional Fox",
+              "logo": "transdimensionalfox.png",
+              "github": "",
+              "twitter": "https://twitter.com/transdimensionalfox",
+              "telegram": ""
+            },
+            {
+              "name": "Okay Bears",
+              "logo": "okaybears.png",
+              "github": "",
+              "twitter": "https://twitter.com/okaybears",
+              "telegram": ""
+            },
+            {
+              "name": "SharkFi",
+              "logo": "sharkfi.png",
+              "github": "",
+              "twitter": "https://twitter.com/sharkfi",
+              "telegram": ""
+            }
+          ]
+        },
+        {
+          "name": "NFT Infra",
+          "projects": [
+            {
+              "name": "Magic Eden",
+              "logo": "magiceden.png",
+              "github": "https://github.com/magiceden-oss",
+              "twitter": "https://twitter.com/MagicEden",
+              "telegram": "https://t.me/magiceden"
+            },
+            {
+              "name": "Tensor",
+              "logo": "tensor.png",
+              "github": "",
+              "twitter": "https://twitter.com/tensor_hq",
+              "telegram": "https://t.me/tensor_hq"
+            },
+            {
+              "name": "Metaplex",
+              "logo": "metaplex.png",
+              "github": "https://github.com/metaplex-foundation",
+              "twitter": "https://twitter.com/metaplex",
+              "telegram": "https://t.me/metaplex"
+            },
+            {
+              "name": "Crossmint",
+              "logo": "crossmint.png",
+              "github": "https://github.com/crossmint",
+              "twitter": "https://twitter.com/crossmint",
+              "telegram": ""
+            },
+            {
+              "name": "Underdog",
+              "logo": "underdog.png",
+              "github": "",
+              "twitter": "https://twitter.com/underdogprotocol",
+              "telegram": ""
+            },
+            {
+              "name": "SharkFi",
+              "logo": "sharkfi.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Owls",
+              "logo": "owls.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Sniper",
+              "logo": "sniper.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            }
+          ]
+        },
+        {
+          "name": "Gaming",
+          "projects": [
+            {
+              "name": "Star Atlas",
+              "logo": "staratlas.png",
+              "github": "https://github.com/staratlasmeta",
+              "twitter": "https://twitter.com/staratlas",
+              "telegram": "https://t.me/staratlas"
+            },
+            {
+              "name": "STEPN",
+              "logo": "stepn.png",
+              "github": "",
+              "twitter": "https://twitter.com/Stepnofficial",
+              "telegram": "https://t.me/Stepnofficial"
+            },
+            {
+              "name": "The Heist",
+              "logo": "theheist.png",
+              "github": "",
+              "twitter": "https://twitter.com/theheistgame",
+              "telegram": ""
+            },
+            {
+              "name": "Voxels",
+              "logo": "voxels.png",
+              "github": "",
+              "twitter": "https://twitter.com/voxels",
+              "telegram": ""
+            },
+            {
+              "name": "Photo Finish",
+              "logo": "photofinish.png",
+              "github": "",
+              "twitter": "https://twitter.com/photofinish",
+              "telegram": ""
+            },
+            {
+              "name": "Colony",
+              "logo": "colony.png",
+              "github": "",
+              "twitter": "https://twitter.com/colonylab",
+              "telegram": ""
+            },
+            {
+              "name": "DexDEX",
+              "logo": "dexdex.png",
+              "github": "",
+              "twitter": "https://twitter.com/dexdex",
+              "telegram": ""
+            },
+            {
+              "name": "Cupcake",
+              "logo": "cupcake.png",
+              "github": "",
+              "twitter": "https://twitter.com/cupcakegames",
+              "telegram": ""
+            },
+            {
+              "name": "Blockasset",
+              "logo": "blockasset.png",
+              "github": "",
+              "twitter": "https://twitter.com/blockassetco",
+              "telegram": "https://t.me/blockassetco"
+            },
+            {
+              "name": "Moonwalk Fitness",
+              "logo": "moonwalkfitness.png",
+              "github": "",
+              "twitter": "https://twitter.com/moonwalkfitness",
+              "telegram": ""
+            },
+            {
+              "name": "Play Solana",
+              "logo": "playsolana.png",
+              "github": "",
+              "twitter": "https://twitter.com/playsolana",
+              "telegram": ""
+            }
+          ]
+        },
+        {
+          "name": "Creator Platforms",
+          "projects": [
+            {
+              "name": "Dialect",
+              "logo": "dialect.png",
+              "github": "https://github.com/dialectlabs",
+              "twitter": "https://twitter.com/saydialect",
+              "telegram": ""
+            },
+            {
+              "name": "Streamflow",
+              "logo": "streamflow.png",
+              "github": "https://github.com/streamflow-finance",
+              "twitter": "https://twitter.com/streamflow_fi",
+              "telegram": "https://t.me/streamflow_fi"
+            },
+            {
+              "name": "DRIP",
+              "logo": "drip.png",
+              "github": "",
+              "twitter": "https://twitter.com/drip_haus",
+              "telegram": ""
+            },
+            {
+              "name": "Only1",
+              "logo": "only1.png",
+              "github": "",
+              "twitter": "https://twitter.com/only1nft",
+              "telegram": "https://t.me/only1nft"
+            },
+            {
+              "name": "Farcaster",
+              "logo": "farcaster.png",
+              "github": "https://github.com/farcasterxyz",
+              "twitter": "https://twitter.com/farcaster",
+              "telegram": ""
+            },
+            {
+              "name": "Audius",
+              "logo": "audius.png",
+              "github": "https://github.com/AudiusProject",
+              "twitter": "https://twitter.com/audius",
+              "telegram": "https://t.me/audius"
+            }
+          ]
+        },
+        {
+          "name": "Blinks",
+          "projects": [
+            {
+              "name": "Dialect",
+              "logo": "dialect.png",
+              "github": "https://github.com/dialectlabs",
+              "twitter": "https://twitter.com/saydialect",
+              "telegram": ""
+            },
+            {
+              "name": "SEND",
+              "logo": "send.png",
+              "github": "",
+              "twitter": "https://twitter.com/sendprotocol",
+              "telegram": ""
+            },
+            {
+              "name": "Backpack",
+              "logo": "backpack.png",
+              "github": "https://github.com/backpack-exchange",
+              "twitter": "https://twitter.com/xNFT_Backpack",
+              "telegram": "https://t.me/xNFT_Backpack"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DePIN",
+      "subcategories": [
+        {
+          "name": "Networks",
+          "projects": [
+            {
+              "name": "Helium",
+              "logo": "helium.png",
+              "github": "https://github.com/helium",
+              "twitter": "https://twitter.com/helium",
+              "telegram": "https://t.me/helium"
+            },
+            {
+              "name": "Render",
+              "logo": "render.png",
+              "github": "https://github.com/rendernetwork",
+              "twitter": "https://twitter.com/rendernetwork",
+              "telegram": "https://t.me/rendernetwork"
+            },
+            {
+              "name": "Hivemapper",
+              "logo": "hivemapper.png",
+              "github": "https://github.com/hivemapper",
+              "twitter": "https://twitter.com/hivemapper",
+              "telegram": "https://t.me/hivemapper"
+            },
+            {
+              "name": "GenesysGo",
+              "logo": "genesysgo.png",
+              "github": "",
+              "twitter": "https://twitter.com/genesysgo",
+              "telegram": ""
+            },
+            {
+              "name": "Nozama",
+              "logo": "nozama.png",
+              "github": "",
+              "twitter": "https://twitter.com/nozama_ai",
+              "telegram": ""
+            },
+            {
+              "name": "Denom",
+              "logo": "denom.png",
+              "github": "",
+              "twitter": "https://twitter.com/denom_protocol",
+              "telegram": ""
+            },
+            {
+              "name": "Koinos",
+              "logo": "koinos.png",
+              "github": "https://github.com/koinos",
+              "twitter": "https://twitter.com/koinosnetwork",
+              "telegram": "https://t.me/koinos"
+            }
+          ]
+        },
+        {
+          "name": "Compute",
+          "projects": [
+            {
+              "name": "Omniacy",
+              "logo": "omniacy.png",
+              "github": "",
+              "twitter": "https://twitter.com/omniacy",
+              "telegram": ""
+            },
+            {
+              "name": "Bware",
+              "logo": "bware.png",
+              "github": "",
+              "twitter": "https://twitter.com/bwarelabs",
+              "telegram": ""
+            },
+            {
+              "name": "Groth",
+              "logo": "groth.png",
+              "github": "",
+              "twitter": "https://twitter.com/groth_network",
+              "telegram": ""
+            },
+            {
+              "name": "Ambient",
+              "logo": "ambient.png",
+              "github": "",
+              "twitter": "https://twitter.com/ambient_compute",
+              "telegram": ""
+            },
+            {
+              "name": "Akash",
+              "logo": "akash.png",
+              "github": "https://github.com/akash-network",
+              "twitter": "https://twitter.com/akashnet_",
+              "telegram": "https://t.me/akashnet"
+            },
+            {
+              "name": "Goosefx",
+              "logo": "goosefx.png",
+              "github": "",
+              "twitter": "https://twitter.com/GooseFX1",
+              "telegram": "https://t.me/goosefx"
+            }
+          ]
+        },
+        {
+          "name": "DePIN",
+          "projects": [
+            {
+              "name": "Helium",
+              "logo": "helium.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Hivemapper",
+              "logo": "hivemapper.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "GenesysGo",
+              "logo": "genesysgo.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Render",
+              "logo": "render.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Omniacy",
+              "logo": "omniacy.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Solcial",
+              "logo": "solcial.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "InJoy",
+              "logo": "injoy.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Nozama",
+              "logo": "nozama.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Domi",
+              "logo": "domi.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Koinos",
+              "logo": "koinos.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Dialect",
+              "logo": "dialect.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Smogs",
+              "logo": "smogs.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Grass",
+              "logo": "grass.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Ambient",
+              "logo": "ambient.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Kodex",
+              "logo": "kodex.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "GoodDollar",
+              "logo": "gooddollar.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Community",
+      "subcategories": [
+        {
+          "name": "Groups + Platforms",
+          "projects": [
+            {
+              "name": "Solana Foundation",
+              "logo": "solanafoundation.png",
+              "github": "https://github.com/solana-foundation",
+              "twitter": "https://twitter.com/SolanaFndn",
+              "telegram": ""
+            },
+            {
+              "name": "Superteam",
+              "logo": "superteam.png",
+              "github": "",
+              "twitter": "https://twitter.com/SuperteamDAO",
+              "telegram": ""
+            },
+            {
+              "name": "LamportDAO",
+              "logo": "lamportdao.png",
+              "github": "",
+              "twitter": "https://twitter.com/LamportDAO",
+              "telegram": ""
+            },
+            {
+              "name": "Solana Uni",
+              "logo": "solanauniversity.png",
+              "github": "",
+              "twitter": "https://twitter.com/solana_uni",
+              "telegram": ""
+            },
+            {
+              "name": "Solana Alliance",
+              "logo": "solanaalliance.png",
+              "github": "",
+              "twitter": "https://twitter.com/solanaalliance",
+              "telegram": ""
+            },
+            {
+              "name": "Solana Collective",
+              "logo": "solanacollective.png",
+              "github": "",
+              "twitter": "https://twitter.com/SolanaCollect",
+              "telegram": ""
+            },
+            {
+              "name": "Solrise",
+              "logo": "solrise.png",
+              "github": "",
+              "twitter": "https://twitter.com/SolriseFinance",
+              "telegram": "https://t.me/solrisefinance"
+            },
+            {
+              "name": "The 76 Devs",
+              "logo": "76.png",
+              "github": "",
+              "twitter": "https://twitter.com/76devs",
+              "telegram": ""
+            },
+            {
+              "name": "Colosseum",
+              "logo": "colosseum.png",
+              "github": "",
+              "twitter": "https://twitter.com/colosseum_so",
+              "telegram": ""
+            },
+            {
+              "name": "TurboETH",
+              "logo": "turboeth.png",
+              "github": "https://github.com/turbo-eth",
+              "twitter": "https://twitter.com/turboeth",
+              "telegram": ""
+            },
+            {
+              "name": "ABR Labs",
+              "logo": "abrlabs.png",
+              "github": "",
+              "twitter": "https://twitter.com/abrlabs",
+              "telegram": ""
+            },
+            {
+              "name": "Arora",
+              "logo": "arora.png",
+              "github": "",
+              "twitter": "https://twitter.com/arora_xyz",
+              "telegram": ""
+            },
+            {
+              "name": "Solana Labs",
+              "logo": "solanalabs.png",
+              "github": "https://github.com/solana-labs",
+              "twitter": "https://twitter.com/solanalabs",
+              "telegram": ""
+            },
+            {
+              "name": "Dexplorer",
+              "logo": "dexplorer.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "VISA",
+              "logo": "visa.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Arete",
+              "logo": "arete.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Code",
+              "logo": "code.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            }
+          ]
+        },
+        {
+          "name": "Events",
+          "projects": [
+            {
+              "name": "Breakpoint",
+              "logo": "breakpoint.png",
+              "github": "",
+              "twitter": "https://twitter.com/SolanaConf",
+              "telegram": ""
+            },
+            {
+              "name": "Hacker House",
+              "logo": "hackerhouse.png",
+              "github": "",
+              "twitter": "https://twitter.com/solanahackerhs",
+              "telegram": ""
+            },
+            {
+              "name": "Solana",
+              "logo": "solana.png",
+              "github": "https://github.com/solana-labs",
+              "twitter": "https://twitter.com/solana",
+              "telegram": "https://t.me/solana"
+            },
+            {
+              "name": "Crossroads",
+              "logo": "crossroads.png",
+              "github": "",
+              "twitter": "https://twitter.com/crossroads_gg",
+              "telegram": ""
+            },
+            {
+              "name": "Solana FM",
+              "logo": "solanafm.png",
+              "github": "",
+              "twitter": "https://twitter.com/solanafm",
+              "telegram": ""
+            },
+            {
+              "name": "Solcial",
+              "logo": "solcial.png",
+              "github": "",
+              "twitter": "https://twitter.com/solcialfi",
+              "telegram": "https://t.me/solcialfi"
+            },
+            {
+              "name": "Unlayered",
+              "logo": "unlayered.png",
+              "github": "",
+              "twitter": "https://twitter.com/unlayeredxyz",
+              "telegram": ""
+            },
+            {
+              "name": "Grizzlython",
+              "logo": "grizzlython.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "BuilderDAO",
+              "logo": "builderdao.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Accelerate",
+              "logo": "accelerate.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            }
+          ]
+        },
+        {
+          "name": "Podcasts",
+          "projects": [
+            {
+              "name": "Validator",
+              "logo": "validator.png",
+              "github": "",
+              "twitter": "https://twitter.com/validatorpod",
+              "telegram": ""
+            },
+            {
+              "name": "Lightspeed",
+              "logo": "lightspeed.png",
+              "github": "",
+              "twitter": "https://twitter.com/lightspeedpod",
+              "telegram": ""
+            },
+            {
+              "name": "Solana",
+              "logo": "solana.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Unlayered",
+              "logo": "unlayered.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Payments",
+      "subcategories": [
+        {
+          "name": "Providers",
+          "projects": [
+            {
+              "name": "Visa",
+              "logo": "visa.png",
+              "github": "",
+              "twitter": "https://twitter.com/visa",
+              "telegram": ""
+            },
+            {
+              "name": "Solana Pay",
+              "logo": "solanapay.png",
+              "github": "https://github.com/solana-labs/solana-pay",
+              "twitter": "https://twitter.com/solanapay",
+              "telegram": ""
+            },
+            {
+              "name": "Shopify",
+              "logo": "shopify.png",
+              "github": "https://github.com/shopify",
+              "twitter": "https://twitter.com/shopify",
+              "telegram": ""
+            },
+            {
+              "name": "TqTok",
+              "logo": "tqtok.png",
+              "github": "",
+              "twitter": "https://twitter.com/tqtok",
+              "telegram": ""
+            },
+            {
+              "name": "Beam",
+              "logo": "beam.png",
+              "github": "",
+              "twitter": "https://twitter.com/beam_xyz",
+              "telegram": ""
+            },
+            {
+              "name": "Maia",
+              "logo": "maia.png",
+              "github": "",
+              "twitter": "https://twitter.com/maia_xyz",
+              "telegram": ""
+            },
+            {
+              "name": "Espresso",
+              "logo": "espresso.png",
+              "github": "https://github.com/espressosystems",
+              "twitter": "https://twitter.com/espressosys",
+              "telegram": ""
+            },
+            {
+              "name": "Sanctum",
+              "logo": "sanctum.png",
+              "github": "",
+              "twitter": "https://twitter.com/sanctumfi",
+              "telegram": ""
+            },
+            {
+              "name": "Stripe",
+              "logo": "stripe.png",
+              "github": "https://github.com/stripe",
+              "twitter": "https://twitter.com/stripe",
+              "telegram": ""
+            }
+          ]
+        },
+        {
+          "name": "Payments",
+          "projects": [
+            {
+              "name": "Visa",
+              "logo": "visa.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Solana Pay",
+              "logo": "solanapay.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Shopify",
+              "logo": "shopify.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "TQTOK",
+              "logo": "tqtok.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Beam",
+              "logo": "beam.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Notifi",
+              "logo": "notifi.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Helio",
+              "logo": "helio.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Maia",
+              "logo": "maia.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Blink",
+              "logo": "blink.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Wyre Wallet",
+              "logo": "wyrewallet.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Espresso",
+              "logo": "espresso.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Sanctum",
+              "logo": "sanctum.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Stripe",
+              "logo": "stripe.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Huma",
+              "logo": "huma.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Infrastructure",
+      "subcategories": [
+        {
+          "name": "Wallets",
+          "projects": [
+            {
+              "name": "Phantom",
+              "logo": "phantom.png",
+              "github": "https://github.com/phantom",
+              "twitter": "https://twitter.com/phantom",
+              "telegram": ""
+            },
+            {
+              "name": "Backpack",
+              "logo": "backpack.png",
+              "github": "https://github.com/backpack-exchange",
+              "twitter": "https://twitter.com/xNFT_Backpack",
+              "telegram": "https://t.me/xNFT_Backpack"
+            },
+            {
+              "name": "Wormhole",
+              "logo": "wormhole.png",
+              "github": "https://github.com/wormhole-foundation",
+              "twitter": "https://twitter.com/wormholecrypto",
+              "telegram": "https://t.me/wormholecrypto"
+            },
+            {
+              "name": "Ledger",
+              "logo": "ledger.png",
+              "github": "https://github.com/LedgerHQ",
+              "twitter": "https://twitter.com/Ledger",
+              "telegram": ""
+            },
+            {
+              "name": "Exodus",
+              "logo": "exodus.png",
+              "github": "",
+              "twitter": "https://twitter.com/exodus_io",
+              "telegram": ""
+            },
+            {
+              "name": "Solflare",
+              "logo": "solflare.png",
+              "github": "",
+              "twitter": "https://twitter.com/solflare_wallet",
+              "telegram": "https://t.me/solflare_wallet"
+            },
+            {
+              "name": "Squads",
+              "logo": "squads.png",
+              "github": "https://github.com/Squads-Protocol",
+              "twitter": "https://twitter.com/SquadsProtocol",
+              "telegram": "https://t.me/squadsprotocol"
+            },
+            {
+              "name": "Zelcore",
+              "logo": "zelcore.png",
+              "github": "",
+              "twitter": "https://twitter.com/zelcore_io",
+              "telegram": "https://t.me/zelcore_io"
+            },
+            {
+              "name": "Alphaage",
+              "logo": "alphaage.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            }
+          ]
+        },
+        {
+          "name": "Interop",
+          "projects": [
+            {
+              "name": "Wormhole",
+              "logo": "wormhole.png",
+              "github": "https://github.com/wormhole-foundation",
+              "twitter": "https://twitter.com/wormholecrypto",
+              "telegram": "https://t.me/wormholecrypto"
+            },
+            {
+              "name": "LayerZero",
+              "logo": "layerzero.png",
+              "github": "https://github.com/LayerZero-Labs",
+              "twitter": "https://twitter.com/LayerZero_Labs",
+              "telegram": "https://t.me/layerzero_official"
+            },
+            {
+              "name": "Multichain",
+              "logo": "multichain.png",
+              "github": "https://github.com/anyswap",
+              "twitter": "https://twitter.com/MultichainOrg",
+              "telegram": "https://t.me/multichain_org"
+            },
+            {
+              "name": "allBridge",
+              "logo": "allbridge.png",
+              "github": "https://github.com/allbridge-io",
+              "twitter": "https://twitter.com/Allbridge_io",
+              "telegram": "https://t.me/allbridge_official"
+            },
+            {
+              "name": "Portal",
+              "logo": "portal.png",
+              "github": "",
+              "twitter": "https://twitter.com/portalbridge_",
+              "telegram": ""
+            },
+            {
+              "name": "Mayan",
+              "logo": "mayan.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Allbridge",
+              "logo": "allbridge.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Axelar",
+              "logo": "axelar.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            }
+          ]
+        },
+        {
+          "name": "Dev Tooling",
+          "projects": [
+            {
+              "name": "Helius",
+              "logo": "helius.png",
+              "github": "https://github.com/helius-labs",
+              "twitter": "https://twitter.com/heliuslabs",
+              "telegram": ""
+            },
+            {
+              "name": "Anza",
+              "logo": "anza.png",
+              "github": "https://github.com/anza-xyz",
+              "twitter": "https://twitter.com/anza_xyz",
+              "telegram": ""
+            },
+            {
+              "name": "Armada",
+              "logo": "armada.png",
+              "github": "",
+              "twitter": "https://twitter.com/armadaxyz",
+              "telegram": ""
+            },
+            {
+              "name": "Realms",
+              "logo": "realms.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Anchor",
+              "logo": "anchor.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Clockwork",
+              "logo": "clockwork.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Squads",
+              "logo": "squads.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Triton",
+              "logo": "triton.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            }
+          ]
+        },
+        {
+          "name": "DAO Tooling",
+          "projects": [
+            {
+              "name": "Realms",
+              "logo": "realms.png",
+              "github": "https://github.com/solana-labs/governance-ui",
+              "twitter": "https://twitter.com/Realms_DAOs",
+              "telegram": ""
+            },
+            {
+              "name": "Squads",
+              "logo": "squads.png",
+              "github": "https://github.com/Squads-Protocol",
+              "twitter": "https://twitter.com/SquadsProtocol",
+              "telegram": "https://t.me/squadsprotocol"
+            },
+            {
+              "name": "Cardinal",
+              "logo": "cardinal.png",
+              "github": "https://github.com/cardinal-labs",
+              "twitter": "https://twitter.com/cardinal_labs",
+              "telegram": ""
+            },
+            {
+              "name": "Tribeca",
+              "logo": "tribeca.png",
+              "github": "https://github.com/TribecaHQ",
+              "twitter": "https://twitter.com/TribecaDAO",
+              "telegram": ""
+            },
+            {
+              "name": "Streamflow",
+              "logo": "streamflow.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Orca",
+              "logo": "orca.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Goki",
+              "logo": "goki.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            }
+          ]
+        },
+        {
+          "name": "AI Agents",
+          "projects": [
+            {
+              "name": "Wayfinder",
+              "logo": "wayfinder.png",
+              "github": "",
+              "twitter": "https://twitter.com/wayfinder_xyz",
+              "telegram": ""
+            },
+            {
+              "name": "ELIXIR",
+              "logo": "elixir.png",
+              "github": "",
+              "twitter": "https://twitter.com/elixir_xyz",
+              "telegram": ""
+            },
+            {
+              "name": "Pyth",
+              "logo": "pyth.png",
+              "github": "https://github.com/pyth-network",
+              "twitter": "https://twitter.com/PythNetwork",
+              "telegram": "https://t.me/Pyth_Network"
+            },
+            {
+              "name": "Agent",
+              "logo": "agent.png",
+              "github": "",
+              "twitter": "https://twitter.com/agent_xyz",
+              "telegram": ""
+            },
+            {
+              "name": "Jito",
+              "logo": "jito.png",
+              "github": "https://github.com/jito-foundation",
+              "twitter": "https://twitter.com/jito_sol",
+              "telegram": "https://t.me/jito_sol"
+            },
+            {
+              "name": "Firedancer",
+              "logo": "firedancer.png",
+              "github": "https://github.com/firedancer-io",
+              "twitter": "https://twitter.com/firedancer_io",
+              "telegram": ""
+            },
+            {
+              "name": "Agave",
+              "logo": "agave.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Switchboard",
+              "logo": "switchboard.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            }
+          ]
+        },
+        {
+          "name": "Oracles + Nodes",
+          "projects": [
+            {
+              "name": "Pyth",
+              "logo": "pyth.png",
+              "github": "https://github.com/pyth-network",
+              "twitter": "https://twitter.com/PythNetwork",
+              "telegram": "https://t.me/Pyth_Network"
+            },
+            {
+              "name": "Switchboard",
+              "logo": "switchboard.png",
+              "github": "https://github.com/switchboard-xyz",
+              "twitter": "https://twitter.com/switchboardxyz",
+              "telegram": ""
+            },
+            {
+              "name": "Mrgn",
+              "logo": "mrgn.png",
+              "github": "https://github.com/mrgnlabs",
+              "twitter": "https://twitter.com/mrgn_labs",
+              "telegram": ""
+            },
+            {
+              "name": "Trophonius",
+              "logo": "trophonius.png",
+              "github": "",
+              "twitter": "https://twitter.com/trophonius_io",
+              "telegram": ""
+            }
+          ]
+        },
+        {
+          "name": "Scaling",
+          "projects": [
+            {
+              "name": "MagicBlock Engine",
+              "logo": "magicblockengine.png",
+              "github": "",
+              "twitter": "https://twitter.com/magicblock_lab",
+              "telegram": ""
+            },
+            {
+              "name": "DZap Zero",
+              "logo": "dzapzero.png",
+              "github": "",
+              "twitter": "https://twitter.com/dzap_io",
+              "telegram": ""
+            },
+            {
+              "name": "Boneal",
+              "logo": "boneal.png",
+              "github": "",
+              "twitter": "https://twitter.com/boneal_xyz",
+              "telegram": ""
+            },
+            {
+              "name": "The Graph",
+              "logo": "thegraph.png",
+              "github": "https://github.com/graphprotocol",
+              "twitter": "https://twitter.com/graphprotocol",
+              "telegram": "https://t.me/graphprotocol"
+            },
+            {
+              "name": "SolanaFM",
+              "logo": "solanafm.png",
+              "github": "",
+              "twitter": "https://twitter.com/solanafm",
+              "telegram": ""
+            },
+            {
+              "name": "Neon",
+              "logo": "neon.png",
+              "github": "https://github.com/neonlabsorg",
+              "twitter": "https://twitter.com/neonlabsorg",
+              "telegram": "https://t.me/neonlabsorg"
+            },
+            {
+              "name": "Helius",
+              "logo": "helius.png",
+              "github": "https://github.com/helius-labs",
+              "twitter": "https://twitter.com/heliuslabs",
+              "telegram": ""
+            },
+            {
+              "name": "Triton",
+              "logo": "triton.png",
+              "github": "",
+              "twitter": "https://twitter.com/tritonfi",
+              "telegram": ""
+            },
+            {
+              "name": "DapZero",
+              "logo": "dapzero.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "ZK Compression",
+              "logo": "zkcompression.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Elusiv",
+              "logo": "elusiv.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            }
+          ]
+        },
+        {
+          "name": "Compute",
+          "projects": [
+            {
+              "name": "Bware",
+              "logo": "bware.png",
+              "github": "",
+              "twitter": "https://twitter.com/bwarelabs",
+              "telegram": ""
+            },
+            {
+              "name": "Render",
+              "logo": "render.png",
+              "github": "https://github.com/rendernetwork",
+              "twitter": "https://twitter.com/rendernetwork",
+              "telegram": "https://t.me/rendernetwork"
+            },
+            {
+              "name": "Akash",
+              "logo": "akash.png",
+              "github": "https://github.com/akash-network",
+              "twitter": "https://twitter.com/akashnet_",
+              "telegram": "https://t.me/akashnet"
+            },
+            {
+              "name": "ZK Compression",
+              "logo": "zkcompression.png",
+              "github": "",
+              "twitter": "https://twitter.com/zkcompression",
+              "telegram": ""
+            },
+            {
+              "name": "Kyve",
+              "logo": "kyve.png",
+              "github": "https://github.com/kyve-org",
+              "twitter": "https://twitter.com/kyve_protocol",
+              "telegram": "https://t.me/kyve_protocol"
+            },
+            {
+              "name": "The Graph",
+              "logo": "thegraph.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Giraffe",
+              "logo": "giraffe.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "SolanaFM",
+              "logo": "solanafm.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Sling",
+              "logo": "sling.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Ovmi",
+              "logo": "ovmi.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Flipside",
+              "logo": "flipside.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            }
+          ]
+        },
+        {
+          "name": "Analytics + User Tools",
+          "projects": [
+            {
+              "name": "Birdeye",
+              "logo": "birdeye.png",
+              "github": "",
+              "twitter": "https://twitter.com/birdeye_so",
+              "telegram": "https://t.me/birdeye_so"
+            },
+            {
+              "name": "Solana Compass",
+              "logo": "solanacompass.png",
+              "github": "",
+              "twitter": "https://twitter.com/solanacompass",
+              "telegram": ""
+            },
+            {
+              "name": "Nozama",
+              "logo": "nozama.png",
+              "github": "",
+              "twitter": "https://twitter.com/nozama_ai",
+              "telegram": ""
+            },
+            {
+              "name": "Flipside",
+              "logo": "flipside.png",
+              "github": "",
+              "twitter": "https://twitter.com/flipsidecrypto",
+              "telegram": ""
+            },
+            {
+              "name": "Ovmi",
+              "logo": "ovmi.png",
+              "github": "",
+              "twitter": "https://twitter.com/ovmi_xyz",
+              "telegram": ""
+            },
+            {
+              "name": "Jupiter Port",
+              "logo": "jupiterport.png",
+              "github": "",
+              "twitter": "https://twitter.com/jupiterport",
+              "telegram": ""
+            },
+            {
+              "name": "Archive",
+              "logo": "archive.png",
+              "github": "",
+              "twitter": "https://twitter.com/archive_xyz",
+              "telegram": ""
+            },
+            {
+              "name": "Toly Badge",
+              "logo": "tolybadge.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Neonex",
+              "logo": "neonex.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Archiver",
+              "logo": "archiver.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            }
+          ]
+        },
+        {
+          "name": "Oracles",
+          "projects": [
+            {
+              "name": "Pyth",
+              "logo": "pyth.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Switchboard",
+              "logo": "switchboard.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Mrgn",
+              "logo": "mrgn.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Trophonius",
+              "logo": "trophonius.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            }
+          ]
+        },
+        {
+          "name": "Clients + Nodes",
+          "projects": [
+            {
+              "name": "Jito",
+              "logo": "jito.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Firedancer",
+              "logo": "firedancer.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            },
+            {
+              "name": "Triton",
+              "logo": "triton.png",
+              "github": "",
+              "twitter": "",
+              "telegram": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SVM Networks",
+      "subcategories": [
+        {
+          "name": "Layer 2s",
+          "projects": [
+            {
+              "name": "Eclipse",
+              "logo": "eclipse.png",
+              "github": "https://github.com/Eclipse-Laboratories-Inc",
+              "twitter": "https://twitter.com/EclipseFND",
+              "telegram": "https://t.me/eclipse_fnd"
+            },
+            {
+              "name": "Atlas",
+              "logo": "atlas.png",
+              "github": "https://github.com/ellipsis-labs",
+              "twitter": "https://twitter.com/ellipsis_labs",
+              "telegram": ""
+            },
+            {
+              "name": "SOON",
+              "logo": "soon.png",
+              "github": "https://github.com/soonlabs",
+              "twitter": "https://twitter.com/soon_labs",
+              "telegram": "https://t.me/soon_labs"
+            },
+            {
+              "name": "SolanaVM",
+              "logo": "solanavm.png",
+              "github": "",
+              "twitter": "https://twitter.com/SolanaVM",
+              "telegram": ""
+            },
+            {
+              "name": "Yona",
+              "logo": "yona.png",
+              "github": "https://github.com/yonalabs",
+              "twitter": "https://twitter.com/yona_labs",
+              "telegram": ""
+            },
+            {
+              "name": "Molecule",
+              "logo": "molecule.png",
+              "github": "",
+              "twitter": "https://twitter.com/molecule_dao",
+              "telegram": ""
+            }
+          ]
+        },
+        {
+          "name": "App-Specific Chains",
+          "projects": [
+            {
+              "name": "Drift",
+              "logo": "drift.png",
+              "github": "https://github.com/drift-labs",
+              "twitter": "https://twitter.com/DriftProtocol",
+              "telegram": "https://t.me/driftprotocol"
+            },
+            {
+              "name": "Mango",
+              "logo": "mango.png",
+              "github": "https://github.com/blockworks-foundation",
+              "twitter": "https://twitter.com/mangomarkets",
+              "telegram": "https://t.me/mangomarkets"
+            },
+            {
+              "name": "Zeta",
+              "logo": "zeta.png",
+              "github": "https://github.com/zetamarkets",
+              "twitter": "https://twitter.com/zetamarkets",
+              "telegram": "https://t.me/zetamarkets"
+            },
+            {
+              "name": "Kamino",
+              "logo": "kamino.png",
+              "github": "https://github.com/hubbleprotocol",
+              "twitter": "https://twitter.com/kamino_finance",
+              "telegram": "https://t.me/kamino_finance"
+            }
+          ]
+        },
+        {
+          "name": "Ecosystem dApps",
+          "projects": [
+            {
+              "name": "Jupiter",
+              "logo": "jupiter.png",
+              "github": "https://github.com/jup-ag",
+              "twitter": "https://twitter.com/JupiterExchange",
+              "telegram": "https://t.me/jupiter_exchange"
+            },
+            {
+              "name": "Orca",
+              "logo": "orca.png",
+              "github": "https://github.com/orca-so",
+              "twitter": "https://twitter.com/orca_so",
+              "telegram": "https://t.me/orca_so"
+            },
+            {
+              "name": "Marinade",
+              "logo": "marinade.png",
+              "github": "https://github.com/marinade-finance",
+              "twitter": "https://twitter.com/MarinadeFinance",
+              "telegram": "https://t.me/marinadefinance"
+            },
+            {
+              "name": "Phantom",
+              "logo": "phantom.png",
+              "github": "https://github.com/phantom",
+              "twitter": "https://twitter.com/phantom",
+              "telegram": ""
+            },
+            {
+              "name": "Backpack",
+              "logo": "backpack.png",
+              "github": "https://github.com/backpack-exchange",
+              "twitter": "https://twitter.com/xNFT_Backpack",
+              "telegram": "https://t.me/xNFT_Backpack"
+            },
+            {
+              "name": "Tensor",
+              "logo": "tensor.png",
+              "github": "",
+              "twitter": "https://twitter.com/tensor_hq",
+              "telegram": "https://t.me/tensor_hq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SVM Mobile",
+      "subcategories": [
+        {
+          "name": "Wallets",
+          "projects": [
+            {
+              "name": "Phantom",
+              "logo": "phantom.png",
+              "github": "https://github.com/phantom",
+              "twitter": "https://twitter.com/phantom",
+              "telegram": ""
+            },
+            {
+              "name": "Backpack",
+              "logo": "backpack.png",
+              "github": "https://github.com/backpack-exchange",
+              "twitter": "https://twitter.com/xNFT_Backpack",
+              "telegram": "https://t.me/xNFT_Backpack"
+            },
+            {
+              "name": "Solflare",
+              "logo": "solflare.png",
+              "github": "",
+              "twitter": "https://twitter.com/solflare_wallet",
+              "telegram": "https://t.me/solflare_wallet"
+            },
+            {
+              "name": "Exodus",
+              "logo": "exodus.png",
+              "github": "",
+              "twitter": "https://twitter.com/exodus_io",
+              "telegram": ""
+            }
+          ]
+        },
+        {
+          "name": "Gaming",
+          "projects": [
+            {
+              "name": "STEPN",
+              "logo": "stepn.png",
+              "github": "",
+              "twitter": "https://twitter.com/Stepnofficial",
+              "telegram": "https://t.me/Stepnofficial"
+            },
+            {
+              "name": "Star Atlas",
+              "logo": "staratlas.png",
+              "github": "https://github.com/staratlasmeta",
+              "twitter": "https://twitter.com/staratlas",
+              "telegram": "https://t.me/staratlas"
+            },
+            {
+              "name": "The Heist",
+              "logo": "theheist.png",
+              "github": "",
+              "twitter": "https://twitter.com/theheistgame",
+              "telegram": ""
+            },
+            {
+              "name": "Moonwalk Fitness",
+              "logo": "moonwalkfitness.png",
+              "github": "",
+              "twitter": "https://twitter.com/moonwalkfitness",
+              "telegram": ""
+            }
+          ]
+        },
+        {
+          "name": "DeFi",
+          "projects": [
+            {
+              "name": "Jupiter",
+              "logo": "jupiter.png",
+              "github": "https://github.com/jup-ag",
+              "twitter": "https://twitter.com/JupiterExchange",
+              "telegram": "https://t.me/jupiter_exchange"
+            },
+            {
+              "name": "Orca",
+              "logo": "orca.png",
+              "github": "https://github.com/orca-so",
+              "twitter": "https://twitter.com/orca_so",
+              "telegram": "https://t.me/orca_so"
+            },
+            {
+              "name": "Birdeye",
+              "logo": "birdeye.png",
+              "github": "",
+              "twitter": "https://twitter.com/birdeye_so",
+              "telegram": "https://t.me/birdeye_so"
+            },
+            {
+              "name": "Tensor",
+              "logo": "tensor.png",
+              "github": "",
+              "twitter": "https://twitter.com/tensor_hq",
+              "telegram": "https://t.me/tensor_hq"
+            }
+          ]
+        },
+        {
+          "name": "Social",
+          "projects": [
+            {
+              "name": "Dialect",
+              "logo": "dialect.png",
+              "github": "https://github.com/dialectlabs",
+              "twitter": "https://twitter.com/saydialect",
+              "telegram": ""
+            },
+            {
+              "name": "SEND",
+              "logo": "send.png",
+              "github": "",
+              "twitter": "https://twitter.com/sendprotocol",
+              "telegram": ""
+            },
+            {
+              "name": "Audius",
+              "logo": "audius.png",
+              "github": "https://github.com/AudiusProject",
+              "twitter": "https://twitter.com/audius",
+              "telegram": "https://t.me/audius"
+            },
+            {
+              "name": "Farcaster",
+              "logo": "farcaster.png",
+              "github": "https://github.com/farcasterxyz",
+              "twitter": "https://twitter.com/farcaster",
+              "telegram": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

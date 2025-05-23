@@ -1,0 +1,317 @@
+/* Mobile-specific responsive styles */
+@media (max-width: 640px) {
+  .enterprise-header {
+    @apply px-4 py-3;
+  }
+  
+  .enterprise-logo {
+    @apply text-base;
+  }
+  
+  .enterprise-main {
+    @apply px-4 py-4;
+  }
+  
+  .stat-card {
+    @apply p-4;
+  }
+  
+  .stat-value {
+    @apply text-xl;
+  }
+  
+  .card-header {
+    @apply p-4;
+  }
+  
+  .card-body {
+    @apply p-4;
+  }
+  
+  .projects {
+    @apply grid-cols-1 gap-3;
+  }
+  
+  .project-card {
+    @apply p-3;
+    height: 130px; /* Slightly smaller on mobile */
+  }
+  
+  .project-logo-container {
+    @apply mb-2;
+  }
+  
+  .project-name {
+    @apply text-xs;
+  }
+  
+  /* Fix for very small screens */
+  @media (max-width: 320px) {
+    .enterprise-sidebar {
+      max-width: 100%;
+      width: 100%;
+    }
+    
+    .project-card {
+      height: auto;
+      min-height: 120px;
+    }
+    
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .filter-container {
+    @apply p-3 flex-col;
+  }
+  
+  .filter-item {
+    @apply mb-2;
+  }
+  
+  .modal-content {
+    @apply w-[95%] max-w-full mx-auto;
+  }
+  
+  .modal-header, .modal-body, .modal-footer {
+    @apply p-4;
+  }
+  
+  h1 {
+    @apply text-xl;
+  }
+  
+  h2 {
+    @apply text-lg;
+  }
+  
+  .btn {
+    @apply text-sm py-2 px-3;
+  }
+  
+  /* Improved touch targets for mobile */
+  .sidebar-item, .nav-link, button, a {
+    @apply min-h-[44px] flex items-center;
+  }
+  
+  /* Better spacing for mobile forms */
+  input, select, textarea {
+    @apply mb-3;
+  }
+  
+  /* Improved mobile scrolling */
+  .overflow-y-auto {
+    @apply overscroll-contain;
+  }
+  
+  /* Fix navbar on mobile */
+  .nav-link {
+    @apply px-2 py-2;
+  }
+  
+  /* Ensure sidebar overlay covers full screen */
+  .sidebar-overlay {
+    @apply fixed inset-0 bg-black bg-opacity-50 z-40;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+/* Tablet-specific responsive styles */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .enterprise-main {
+    @apply px-6;
+  }
+  
+  .projects {
+    @apply grid-cols-2 gap-4;
+  }
+  
+  .subcategories {
+    @apply grid-cols-2;
+  }
+  
+  /* Improved touch targets for tablets */
+  .sidebar-item, .nav-link, button:not(.inline-button), a:not(.inline-link) {
+    @apply min-h-[40px];
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) {
+  .hover-lift:hover, .hover-highlight:hover, .hover-scale:hover {
+    transform: none;
+    box-shadow: none;
+    border-color: inherit;
+  }
+  
+  .btn, .sidebar-item, .project-card {
+    @apply active:bg-gray-100 active:scale-[0.98] transition-transform;
+  }
+  
+  .btn-primary {
+    @apply active:bg-accent-blue/90;
+  }
+  
+  .touch-feedback {
+    @apply transition-all active:bg-gray-100;
+  }
+  
+  /* Improved scrolling on touch devices */
+  .overflow-y-auto, .overflow-x-auto {
+    @apply overscroll-contain;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  /* Disable hover effects that don't work well on touch */
+  *[title]:hover::after {
+    display: none !important;
+  }
+}
+
+/* High contrast mode support */
+@media (forced-colors: active) {
+  .enterprise-card, .stat-card, .project-card {
+    border: 1px solid CanvasText;
+  }
+  
+  .btn {
+    border: 1px solid CanvasText;
+  }
+  
+  .btn-primary {
+    background-color: Highlight;
+    color: HighlightText;
+  }
+}
+
+/* Print styles */
+@media print {
+  .enterprise-header, .enterprise-sidebar, .enterprise-footer, .filter-container, .btn {
+    display: none !important;
+  }
+  
+  .enterprise-main {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
+  .enterprise-card, .stat-card, .project-card {
+    break-inside: avoid;
+    border: 1px solid #ddd !important;
+    box-shadow: none !important;
+  }
+  
+  body {
+    font-size: 12pt;
+    color: #000 !important;
+    background: #fff !important;
+  }
+  
+  a {
+    text-decoration: underline;
+    color: #000 !important;
+  }
+}
+
+/* Accessibility improvements */
+.focus-visible:focus {
+  outline: 2px solid #3B82F6 !important;
+  outline-offset: 2px !important;
+}
+
+[role="button"]:focus, button:focus, a:focus, input:focus, select:focus, textarea:focus {
+  @apply focus-visible;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Smooth scrolling for non-reduced motion */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Improved animations */
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.3s ease-out;
+}
+
+.animate-slide-down {
+  animation: slideDown 0.3s ease-out;
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* Improved loading states */
+.skeleton {
+  @apply bg-gray-200 dark:bg-gray-700 animate-pulse rounded;
+}
+
+.skeleton-text {
+  @apply h-4 w-full skeleton mb-2;
+}
+
+.skeleton-circle {
+  @apply rounded-full skeleton;
+}
+
+.skeleton-button {
+  @apply h-10 w-24 skeleton;
+}
+
+/* Fix for navbar menu items */
+.nav-link {
+  @apply relative inline-flex items-center justify-center;
+}
+
+.nav-link.active {
+  @apply font-medium text-primary;
+}
+
+.nav-link.active:after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-full h-0.5 bg-primary rounded-full;
+}
+
+/* Fix for external links */
+.external-link-icon {
+  @apply ml-1 h-3 w-3 inline-flex;
+}

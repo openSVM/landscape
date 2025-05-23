@@ -1,0 +1,18 @@
+.hover-bg-surface-alt:hover {
+  background-color: var(--surface-alt);
+}
+
+.nav-link {
+  color: var(--primary);
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  background-color: var(--surface-alt);
+}
+
+/* Active nav link styles */
+.nav-link.active {
+  background-color: var(--accent-light);
+  color: var(--text-on-accent);
+}
