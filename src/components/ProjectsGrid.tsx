@@ -1,6 +1,6 @@
 import React from 'react';
 import { ProjectType } from '../types';
-import { ProjectModal } from './ProjectModal';
+import ProjectModal from './ProjectModal';
 
 interface ProjectsGridProps {
   projects: ProjectType[];
@@ -28,6 +28,10 @@ const ProjectsGrid: React.FC<ProjectsGridProps> = ({ projects, loading }) => {
   }
   
   const handleProjectClick = (project: ProjectType) => {
+    // Ensure project has a valid id string
+    if (!project.id) {
+      project.id = `project-${project.name.toLowerCase().replace(/\s+/g, '-')}`;
+    }
     setSelectedProject(project);
   };
   
