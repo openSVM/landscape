@@ -89,14 +89,14 @@
 .theme-grayscale {
   /* Typography */
   --font-family: 'IBM Plex Mono', monospace;
-  --font-size-xs: 0.6rem;
-  --font-size-sm: 0.7rem;
-  --font-size-md: 0.8rem;
-  --font-size-lg: 0.9rem;
-  --font-size-xl: 0.95rem;
-  --font-size-2xl: 1rem;
-  --font-size-3xl: 1.1rem;
-  --font-size-4xl: 1.25rem;
+  --font-size-xs: 0.55rem;
+  --font-size-sm: 0.65rem;
+  --font-size-md: 0.75rem;
+  --font-size-lg: 0.85rem;
+  --font-size-xl: 0.9rem;
+  --font-size-2xl: 0.95rem;
+  --font-size-3xl: 1rem;
+  --font-size-4xl: 1.1rem;
   
   /* Colors */
   --primary: #1a1a1a;
@@ -122,13 +122,13 @@
   --shadow-lg: 0 1px 3px rgba(0, 0, 0, 0.1);
   
   /* Spacing - Extremely reduced for maximum content density */
-  --spacing-1: 0.0625rem;
-  --spacing-2: 0.125rem;
-  --spacing-3: 0.1875rem;
-  --spacing-4: 0.25rem;
-  --spacing-5: 0.375rem;
-  --spacing-6: 0.5rem;
-  --spacing-8: 0.75rem;
+  --spacing-1: 0.03125rem;
+  --spacing-2: 0.0625rem;
+  --spacing-3: 0.125rem;
+  --spacing-4: 0.1875rem;
+  --spacing-5: 0.25rem;
+  --spacing-6: 0.375rem;
+  --spacing-8: 0.5rem;
   
   /* Border radius */
   --radius-sm: 0;
@@ -148,8 +148,8 @@ body {
 
 /* Grayscale theme specific styles - Ultra-compact for maximum content density */
 .theme-grayscale body {
-  line-height: 1.1;
-  letter-spacing: -0.02em;
+  line-height: 1;
+  letter-spacing: -0.03em;
 }
 
 .theme-grayscale h1, 
@@ -160,10 +160,10 @@ body {
 .theme-grayscale h6 {
   font-family: var(--font-family);
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
   text-transform: uppercase;
-  margin-top: 0.25rem;
-  margin-bottom: 0.125rem;
+  margin-top: 0.125rem;
+  margin-bottom: 0.0625rem;
 }
 
 .theme-grayscale h1 {
@@ -183,7 +183,7 @@ body {
 }
 
 .theme-grayscale p {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.125rem;
 }
 
 .theme-grayscale a {
@@ -201,20 +201,20 @@ body {
 .theme-grayscale pre {
   font-family: var(--font-family);
   background-color: var(--surface-alt);
-  padding: 0.0625em 0.125em;
+  padding: 0.03125em 0.0625em;
   border-radius: 0;
   font-size: 0.9em;
 }
 
 .theme-grayscale pre {
-  padding: 0.125rem;
+  padding: 0.0625rem;
   overflow-x: auto;
   border: 1px solid var(--border);
 }
 
 .theme-grayscale blockquote {
   border-left: 1px solid var(--border);
-  padding-left: 0.125rem;
+  padding-left: 0.0625rem;
   margin-left: 0;
   color: var(--secondary);
 }
@@ -223,14 +223,14 @@ body {
 .theme-grayscale table {
   width: 100%;
   border-collapse: collapse;
-  margin: 0.25rem 0;
+  margin: 0.125rem 0;
   font-size: var(--font-size-xs);
 }
 
 .theme-grayscale th, 
 .theme-grayscale td {
   border: 1px solid var(--border);
-  padding: 0.0625rem 0.125rem;
+  padding: 0.03125rem 0.0625rem;
   text-align: left;
 }
 
@@ -255,7 +255,7 @@ body {
 }
 
 .theme-grayscale .enterprise-main {
-  padding: 0.25rem;
+  padding: 0.125rem;
   max-width: 1400px;
 }
 
@@ -265,7 +265,7 @@ body {
   }
   
   .theme-grayscale .enterprise-main {
-    padding: 0.125rem;
+    padding: 0.0625rem;
   }
 }
 
@@ -282,8 +282,8 @@ body {
   border-radius: 0;
   border: 1px solid var(--border);
   box-shadow: var(--shadow-sm);
-  padding: 0.25rem;
-  margin-bottom: 0.25rem;
+  padding: 0.125rem;
+  margin-bottom: 0.125rem;
 }
 
 .enterprise-card:hover {
@@ -296,14 +296,14 @@ body {
 
 /* Grid layouts - Ultra-compact for maximum content density */
 .theme-grayscale .grid {
-  gap: 0.125rem;
+  gap: 0.0625rem;
 }
 
 .theme-grayscale .grid-cols-1,
 .theme-grayscale .grid-cols-2,
 .theme-grayscale .grid-cols-3,
 .theme-grayscale .grid-cols-4 {
-  gap: 0.125rem;
+  gap: 0.0625rem;
 }
 
 /* Form elements - Ultra-compact for maximum content density */
@@ -311,125 +311,130 @@ body {
 .theme-grayscale select,
 .theme-grayscale textarea,
 .theme-grayscale button {
-  padding: 0.0625rem 0.125rem;
+  padding: 0.03125rem 0.0625rem;
   font-size: var(--font-size-sm);
 }
 
 /* Modal dialogs - Ultra-compact for maximum content density */
 .theme-grayscale .modal-content {
-  padding: 0.25rem;
+  padding: 0.125rem;
 }
 
 .theme-grayscale .modal-header {
-  padding: 0.125rem 0.25rem;
+  padding: 0.0625rem 0.125rem;
 }
 
 .theme-grayscale .modal-body {
-  padding: 0.125rem 0.25rem;
+  padding: 0.0625rem 0.125rem;
 }
 
 .theme-grayscale .modal-footer {
-  padding: 0.125rem 0.25rem;
+  padding: 0.0625rem 0.125rem;
 }
 
 /* Navigation - Ultra-compact for maximum content density */
 .theme-grayscale nav {
-  padding: 0.0625rem 0.125rem;
+  padding: 0.03125rem 0.0625rem;
 }
 
 .theme-grayscale .nav-item {
-  padding: 0.0625rem 0.125rem;
+  padding: 0.03125rem 0.0625rem;
 }
 
 /* Sidebar - Ultra-compact for maximum content density */
 .theme-grayscale .sidebar {
-  padding: 0.125rem;
+  padding: 0.0625rem;
 }
 
 .theme-grayscale .sidebar-item {
-  padding: 0.0625rem 0.125rem;
-  margin-bottom: 0.0625rem;
+  padding: 0.03125rem 0.0625rem;
+  margin-bottom: 0.03125rem;
 }
 
 .theme-grayscale .sidebar-section {
-  margin-bottom: 0.125rem;
+  margin-bottom: 0.0625rem;
 }
 
 /* Lists - Ultra-compact for maximum content density */
 .theme-grayscale ul,
 .theme-grayscale ol {
-  margin: 0.125rem 0;
-  padding-left: 0.5rem;
+  margin: 0.0625rem 0;
+  padding-left: 0.25rem;
 }
 
 .theme-grayscale li {
-  margin-bottom: 0.0625rem;
-  line-height: 1.1;
+  margin-bottom: 0.03125rem;
+  line-height: 1;
 }
 
 .theme-grayscale .list-item,
 .theme-grayscale .list-group-item {
-  padding: 0.0625rem 0.125rem;
-  margin-bottom: 0.0625rem;
+  padding: 0.03125rem 0.0625rem;
+  margin-bottom: 0.03125rem;
   border-bottom: 1px solid var(--border);
 }
 
 /* Project cards - Ultra-compact for maximum content density */
 .theme-grayscale .project-card {
-  padding: 0.125rem;
-  margin-bottom: 0.125rem;
+  padding: 0.0625rem;
+  margin-bottom: 0.0625rem;
   border: 1px solid var(--border);
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .theme-grayscale .project-card-header {
-  padding: 0.0625rem 0.125rem;
-  margin-bottom: 0.0625rem;
+  padding: 0.03125rem 0.0625rem;
+  margin-bottom: 0.03125rem;
 }
 
 .theme-grayscale .project-card-body {
-  padding: 0.0625rem 0.125rem;
+  padding: 0.03125rem 0.0625rem;
 }
 
 .theme-grayscale .project-card-footer {
-  padding: 0.0625rem 0.125rem;
-  margin-top: 0.0625rem;
+  padding: 0.03125rem 0.0625rem;
+  margin-top: 0.03125rem;
 }
 
 /* Category list - Ultra-compact for maximum content density */
 .theme-grayscale .category-list {
-  margin: 0.125rem 0;
+  margin: 0.0625rem 0;
 }
 
 .theme-grayscale .category-item {
-  padding: 0.0625rem 0.125rem;
-  margin-bottom: 0.0625rem;
+  padding: 0.03125rem 0.0625rem;
+  margin-bottom: 0.03125rem;
   border-bottom: 1px solid var(--border);
 }
 
 /* Data tables - Ultra-compact for maximum content density */
 .theme-grayscale .data-table {
   font-size: var(--font-size-xs);
-  line-height: 1.1;
+  line-height: 1;
 }
 
 .theme-grayscale .data-table th,
 .theme-grayscale .data-table td {
-  padding: 0.0625rem 0.125rem;
+  padding: 0.03125rem 0.0625rem;
 }
 
 .theme-grayscale .data-table tr {
-  height: 1.25rem;
+  height: 1rem;
 }
 
 /* Statistics cards - Ultra-compact for maximum content density */
 .theme-grayscale .stat-card {
-  padding: 0.125rem;
-  margin-bottom: 0.125rem;
+  padding: 0.0625rem;
+  margin-bottom: 0.0625rem;
 }
 
 .theme-grayscale .stat-value {
   font-size: var(--font-size-xl);
-  margin: 0.0625rem 0;
+  margin: 0.03125rem 0;
 }
 
 .theme-grayscale .stat-label {
@@ -440,15 +445,16 @@ body {
 /* Projects grid - Ultra-compact for maximum content density */
 .theme-grayscale .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  gap: 0.125rem;
-  padding: 0.125rem;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 0.03125rem;
+  padding: 0.03125rem;
 }
 
 .theme-grayscale .project-logo-container {
-  width: 24px;
-  height: 24px;
-  margin-bottom: 0.0625rem;
+  width: 16px;
+  height: 16px;
+  margin-bottom: 0.03125rem;
+  display: inline-flex;
 }
 
 .theme-grayscale .project-logo {
@@ -458,10 +464,12 @@ body {
 
 .theme-grayscale .project-name {
   font-size: var(--font-size-xs);
-  margin: 0.0625rem 0;
+  margin: 0.03125rem 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  max-width: 100%;
+  line-height: 1;
 }
 
 .theme-grayscale .project-category {
@@ -470,34 +478,51 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  max-width: 100%;
+  line-height: 1;
 }
 
 /* Corporate project cards - Ultra-compact for maximum content density */
 .theme-grayscale .corporate-project-card {
-  padding: 0.125rem;
-  margin-bottom: 0.125rem;
+  padding: 0.0625rem;
+  margin-bottom: 0.0625rem;
   height: auto;
-  min-height: 80px;
+  min-height: 40px;
+  max-height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .theme-grayscale .corporate-project-logo-container {
-  width: 24px;
-  height: 24px;
-  margin-bottom: 0.0625rem;
+  width: 16px;
+  height: 16px;
+  margin-bottom: 0.03125rem;
 }
 
 .theme-grayscale .corporate-project-name {
   font-size: var(--font-size-xs);
-  margin: 0.0625rem 0;
+  margin: 0.03125rem 0;
+  line-height: 1;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .theme-grayscale .corporate-project-category {
   font-size: var(--font-size-xs);
   margin: 0;
+  line-height: 1;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .theme-grayscale .corporate-project-hover-overlay {
-  padding: 0.0625rem;
+  padding: 0.03125rem;
 }
 
 /* Transitions */
