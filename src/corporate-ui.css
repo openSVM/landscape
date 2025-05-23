@@ -151,53 +151,128 @@ p {
 }
 
 /* Sidebar Enhancements */
-.enterprise-sidebar {
+.corporate-sidebar {
   background-color: var(--corporate-surface);
   border-right: 1px solid var(--corporate-border);
   width: 280px;
-  padding: 0;
+  height: 100%;
+  padding: var(--corporate-spacing-4) 0;
   box-shadow: var(--corporate-shadow-sm);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
 }
 
-.sidebar-section {
-  padding: var(--corporate-spacing-4);
-  border-bottom: 1px solid var(--corporate-border);
+.corporate-sidebar-content {
+  flex: 1;
 }
 
-.sidebar-title {
+.corporate-sidebar-section {
+  padding: var(--corporate-spacing-2) var(--corporate-spacing-4);
+  margin-bottom: var(--corporate-spacing-4);
+}
+
+.corporate-sidebar-title {
   font-size: var(--corporate-font-size-xs);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--corporate-secondary);
   margin-bottom: var(--corporate-spacing-3);
+  padding-left: var(--corporate-spacing-2);
 }
 
-.sidebar-item {
+.corporate-sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: var(--corporate-spacing-1);
+}
+
+.corporate-sidebar-item {
   display: flex;
   align-items: center;
-  gap: var(--corporate-spacing-2);
+  gap: var(--corporate-spacing-3);
   padding: var(--corporate-spacing-2) var(--corporate-spacing-3);
   border-radius: var(--corporate-radius-md);
   color: var(--corporate-primary);
   font-size: var(--corporate-font-size-sm);
   font-weight: 500;
   transition: background-color 0.2s, color 0.2s;
+  text-align: left;
+  width: 100%;
+  border: none;
+  background: transparent;
+  cursor: pointer;
 }
 
-.sidebar-item:hover {
+.corporate-sidebar-item:hover {
   background-color: var(--corporate-background-alt);
 }
 
-.sidebar-item.active {
+.corporate-sidebar-item.active {
   background-color: var(--corporate-accent);
   color: white;
 }
 
-.sidebar-item svg {
+.corporate-sidebar-icon {
   width: 18px;
   height: 18px;
   flex-shrink: 0;
+}
+
+.corporate-sidebar-footer {
+  padding: var(--corporate-spacing-4);
+  border-top: 1px solid var(--corporate-border);
+  margin-top: auto;
+}
+
+.corporate-sidebar-theme-indicator {
+  display: flex;
+  align-items: center;
+  gap: var(--corporate-spacing-2);
+  margin-bottom: var(--corporate-spacing-2);
+}
+
+.corporate-theme-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--corporate-accent);
+}
+
+.corporate-theme-dot.dark {
+  background-color: #1e293b;
+}
+
+.corporate-theme-dot.light {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.corporate-theme-dot.blue {
+  background-color: #3b82f6;
+}
+
+.corporate-theme-dot.grayscale {
+  background-color: #4b5563;
+}
+
+.corporate-theme-name {
+  font-size: var(--corporate-font-size-xs);
+  color: var(--corporate-secondary);
+}
+
+.corporate-sidebar-version {
+  font-size: var(--corporate-font-size-xs);
+  color: var(--corporate-secondary);
+  opacity: 0.7;
+}
+
+.corporate-sidebar-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 40;
 }
 
 /* Card Enhancements */
@@ -541,7 +616,7 @@ p {
 }
 
 /* Modal Enhancements */
-.modal-overlay {
+.corporate-modal-overlay {
   position: fixed;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.5);
@@ -552,7 +627,7 @@ p {
   padding: var(--corporate-spacing-4);
 }
 
-.modal-content {
+.corporate-modal-content {
   background-color: var(--corporate-surface);
   border-radius: var(--corporate-radius-lg);
   box-shadow: var(--corporate-shadow-lg);
@@ -563,7 +638,7 @@ p {
   border: 1px solid var(--corporate-border);
 }
 
-.modal-header {
+.corporate-modal-header {
   padding: var(--corporate-spacing-4);
   border-bottom: 1px solid var(--corporate-border);
   display: flex;
@@ -571,18 +646,18 @@ p {
   justify-content: space-between;
 }
 
-.modal-title {
+.corporate-modal-title {
   font-size: var(--corporate-font-size-lg);
   font-weight: 600;
   color: var(--corporate-primary);
   margin: 0;
 }
 
-.modal-body {
+.corporate-modal-body {
   padding: var(--corporate-spacing-4);
 }
 
-.modal-footer {
+.corporate-modal-footer {
   padding: var(--corporate-spacing-4);
   border-top: 1px solid var(--corporate-border);
   display: flex;
