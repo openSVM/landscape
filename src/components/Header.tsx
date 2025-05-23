@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiMenu, FiSearch, FiExternalLink } from 'react-icons/fi';
+import { FiMenu, FiSearch, FiExternalLink, FiGithub } from 'react-icons/fi';
 import ThemeToggle from './ThemeToggle';
 
 interface HeaderProps {
@@ -140,10 +140,28 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar, openCommandPalette }) =>
             Categories
           </a>
           <a 
+            href="https://github.com/openSVM/landscape"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="nav-link px-3 py-2 rounded-md transition-colors flex items-center gap-1.5 hover:bg-opacity-80 hover:bg-surface-alt"
+            style={{
+              color: 'var(--primary)',
+              backgroundColor: 'transparent'
+            }}
+            onClick={(e) => {
+              e.preventDefault();
+              openExternalLink('https://github.com/openSVM/landscape');
+            }}
+            aria-label="GitHub Repository"
+          >
+            <FiGithub className="h-4 w-4" />
+            <span className="hidden lg:inline">GitHub</span>
+          </a>
+          <a 
             href="https://opensvm.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="nav-link px-3 py-2 rounded-md transition-colors flex items-center gap-1 hover:bg-opacity-80 hover:bg-surface-alt"
+            className="nav-link px-3 py-2 rounded-md transition-colors flex items-center gap-1.5 hover:bg-opacity-80 hover:bg-surface-alt"
             style={{
               color: 'var(--primary)',
               backgroundColor: 'transparent'
