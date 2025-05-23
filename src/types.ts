@@ -26,4 +26,7 @@ interface CategoryType {
   }[];
 }
 
-export type { ProjectType, CategoryType };
+// Alias Project to ProjectType for backward compatibility
+type Project = ProjectType;
+
+export type { ProjectType, CategoryType, Project };

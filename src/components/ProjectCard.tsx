@@ -1,9 +1,9 @@
 import React from 'react';
-import { Project } from '../types';
+import { ProjectType } from '../types';
 import { useTheme } from '../contexts/ThemeContext';
 
 interface ProjectCardProps {
-  project: Project;
+  project: ProjectType;
   onClick: () => void;
 }
 
@@ -14,9 +14,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
   // Extract first letter of project name for placeholder
   const firstLetter = name.charAt(0).toUpperCase();
 
+  // Use a conditional to determine class names based on theme
+  const isGrayscale = theme === 'grayscale';
+  const isDark = theme === 'dark';
+
   return (
     <div 
-      className={`${theme === 'corporate' ? 'corporate-project-card' : 'project-card'}`}
+      className={isGrayscale ? 'project-card' : 'corporate-project-card'}
       onClick={onClick}
       style={{
         height: '40px',
@@ -31,7 +35,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
       }}
     >
       <div 
-        className={`${theme === 'corporate' ? 'corporate-project-logo-container' : 'project-logo-container'}`}
+        className={isGrayscale ? 'project-logo-container' : 'corporate-project-logo-container'}
         style={{
           width: '28px',
           height: '28px',
@@ -46,7 +50,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
           <img 
             src={logo} 
             alt={`${name} logo`} 
-            className={`${theme === 'corporate' ? 'corporate-project-logo' : 'project-logo'}`}
+            className={isGrayscale ? 'project-logo' : 'corporate-project-logo'}
             style={{
               maxWidth: '100%',
               maxHeight: '100%'
@@ -54,11 +58,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
           />
         ) : (
           <div 
-            className={`${theme === 'corporate' ? 'corporate-project-logo-placeholder' : 'project-logo-placeholder'}`}
+            className={isGrayscale ? 'project-logo-placeholder' : 'corporate-project-logo-placeholder'}
             style={{
               width: '28px',
               height: '28px',
-              backgroundColor: theme === 'dark' ? '#334155' : '#3498db',
+              backgroundColor: isDark ? '#334155' : '#3498db',
               color: 'white',
               display: 'flex',
               alignItems: 'center',
@@ -72,7 +76,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
         )}
       </div>
       <div 
-        className={`${theme === 'corporate' ? 'corporate-project-text' : 'project-text'}`}
+        className={isGrayscale ? 'project-text' : 'corporate-project-text'}
         style={{
           display: 'flex',
           flexDirection: 'row',
@@ -82,11 +86,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
         }}
       >
         <div 
-          className={`${theme === 'corporate' ? 'corporate-project-name' : 'project-name'}`}
+          className={isGrayscale ? 'project-name' : 'corporate-project-name'}
           style={{
             fontSize: '14px',
             fontWeight: 600,
-            color: theme === 'dark' ? '#e2e8f0' : '#2c3e50',
+            color: isDark ? '#e2e8f0' : '#2c3e50',
             margin: '0 8px 0 0',
             lineHeight: 1.2,
             whiteSpace: 'nowrap',
@@ -97,11 +101,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
           {name}
         </div>
         <div 
-          className={`${theme === 'corporate' ? 'corporate-project-category' : 'project-category'}`}
+          className={isGrayscale ? 'project-category' : 'corporate-project-category'}
           style={{
             fontSize: '14px',
             fontWeight: 500,
-            color: theme === 'dark' ? '#94a3b8' : '#7f8c8d',
+            color: isDark ? '#94a3b8' : '#7f8c8d',
             margin: 0,
             lineHeight: 1.2,
             whiteSpace: 'nowrap',

@@ -26,15 +26,23 @@ const Sidebar: React.FC<SidebarProps> = ({ activeSection, onSectionChange }) => 
 
   const isHeader = (section: any) => section.items !== undefined;
   const isActive = (id: string) => activeSection === id;
+  
+  // Use a conditional to determine class names based on theme
+  const isGrayscale = theme === 'grayscale';
+  const isDark = theme === 'dark';
 
   return (
     <div 
-      className={`${theme === 'corporate' ? 'corporate-sidebar' : 'sidebar'}`}
+      className={isGrayscale ? 'sidebar' : 'corporate-sidebar'}
       style={{
-        padding: '8px',
+        padding: '12px 8px',
         display: 'flex',
         flexDirection: 'column',
-        gap: '8px'
+        gap: '4px',
+        borderRight: isDark ? '1px solid #334155' : '1px solid #e2e8f0',
+        height: '100%',
+        minWidth: '200px',
+        transition: 'all 0.3s ease'
       }}
     >
       {sections.map((section) => {
@@ -42,17 +50,22 @@ const Sidebar: React.FC<SidebarProps> = ({ activeSection, onSectionChange }) => 
           return (
             <div 
               key={section.id} 
-              className={`${theme === 'corporate' ? 'corporate-sidebar-section' : 'sidebar-section'}`}
+              className={isGrayscale ? 'sidebar-section' : 'corporate-sidebar-section'}
+              style={{
+                marginTop: section.id !== 'main' ? '16px' : '0',
+                marginBottom: '4px'
+              }}
             >
               <h3 
-                className={`${theme === 'corporate' ? 'corporate-sidebar-title' : 'sidebar-title'}`}
+                className={isGrayscale ? 'sidebar-title' : 'corporate-sidebar-title'}
                 style={{
                   fontSize: '12px',
                   fontWeight: 600,
                   textTransform: 'uppercase',
                   letterSpacing: '0.05em',
-                  margin: '8px 0',
-                  padding: '0 8px'
+                  margin: '0',
+                  padding: '0 8px',
+                  color: isDark ? '#94a3b8' : '#64748b'
                 }}
               >
                 {section.label}
@@ -63,51 +76,85 @@ const Sidebar: React.FC<SidebarProps> = ({ activeSection, onSectionChange }) => 
           return (
             <button
               key={section.id}
-              className={`${theme === 'corporate' ? 'corporate-sidebar-item' : 'sidebar-item'} ${
+              className={`${isGrayscale ? 'sidebar-item' : 'corporate-sidebar-item'} ${
                 isActive(section.id) ? 'active' : ''
               }`}
               onClick={() => onSectionChange(section.id)}
               style={{
-                padding: '8px 12px',
+                padding: '10px 12px',
                 borderRadius: '4px',
                 display: 'flex',
                 alignItems: 'center',
-                gap: '8px',
+                gap: '10px',
                 transition: 'all 0.2s ease',
                 backgroundColor: isActive(section.id) 
-                  ? (theme === 'dark' ? '#334155' : '#3498db') 
+                  ? (isDark ? '#334155' : '#3498db') 
                   : 'transparent',
                 color: isActive(section.id)
-                  ? (theme === 'dark' ? '#ffffff' : '#ffffff')
-                  : (theme === 'dark' ? '#e2e8f0' : '#2c3e50'),
+                  ? (isDark ? '#ffffff' : '#ffffff')
+                  : (isDark ? '#e2e8f0' : '#2c3e50'),
                 border: 'none',
                 cursor: 'pointer',
                 textAlign: 'left',
                 width: '100%',
                 fontWeight: 500,
-                fontSize: '14px'
+                fontSize: '14px',
+                position: 'relative',
+                overflow: 'hidden'
               }}
             >
               <span 
-                className={`${theme === 'corporate' ? 'corporate-sidebar-icon' : 'sidebar-icon'}`}
+                className={isGrayscale ? 'sidebar-icon' : 'corporate-sidebar-icon'}
                 style={{
                   width: '16px',
                   height: '16px',
-                  flexShrink: 0
+                  flexShrink: 0,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center'
                 }}
               >
                 {section.icon}
               </span>
               {section.label}
+              
+              {/* Active indicator bar */}
+              {isActive(section.id) && (
+                <span 
+                  style={{
+                    position: 'absolute',
+                    left: '0',
+                    top: '0',
+                    bottom: '0',
+                    width: '3px',
+                    backgroundColor: isDark ? '#60a5fa' : '#2563eb',
+                    borderRadius: '0 2px 2px 0'
+                  }}
+                />
+              )}
             </button>
           );
         }
       })}
-      <div className="sidebar-footer" style={{ marginTop: 'auto', padding: '8px' }}>
-        <div className="theme-indicator" style={{ fontSize: '14px', opacity: 0.7 }}>
+      <div className="sidebar-footer" style={{ 
+        marginTop: 'auto', 
+        padding: '16px 8px',
+        borderTop: isDark ? '1px solid #334155' : '1px solid #e2e8f0',
+        marginTop: '24px'
+      }}>
+        <div className="theme-indicator" style={{ 
+          fontSize: '14px', 
+          opacity: 0.7,
+          fontWeight: 500,
+          marginBottom: '4px'
+        }}>
           Grayscale Theme
         </div>
-        <div className="version" style={{ fontSize: '12px', opacity: 0.5 }}>
+        <div className="version" style={{ 
+          fontSize: '12px', 
+          opacity: 0.5,
+          fontWeight: 400
+        }}>
           v1.2.0
         </div>
       </div>

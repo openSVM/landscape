@@ -204,11 +204,8 @@ function App() {
         
         <div className="flex">
           <Sidebar 
-            activeView={activeView}
-            setActiveView={setActiveView}
-            isOpen={sidebarOpen}
-            setIsOpen={setSidebarOpen}
-            onClose={() => setSidebarOpen(false)}
+            activeSection={activeView}
+            onSectionChange={setActiveView}
           />
           
           <main className="enterprise-main">
