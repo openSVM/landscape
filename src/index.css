@@ -40,6 +40,36 @@
   --header-border: var(--border);
 }
 
+/* Grayscale theme - Professional & Corporate */
+.theme-grayscale {
+  --background: rgb(248, 248, 248);
+  --background-alt: rgb(240, 240, 240);
+  --surface: rgb(255, 255, 255);
+  --surface-alt: rgb(245, 245, 245);
+  --primary: rgb(40, 40, 40);
+  --primary-light: rgb(80, 80, 80);
+  --secondary: rgb(120, 120, 120);
+  --secondary-light: rgb(160, 160, 160);
+  --secondary-dark: rgb(100, 100, 100);
+  --border: rgb(220, 220, 220);
+  --accent: rgb(70, 70, 70);
+  --accent-light: rgb(100, 100, 100);
+  --accent-dark: rgb(50, 50, 50);
+  --text-on-accent: rgb(255, 255, 255);
+  --text-on-secondary: rgb(255, 255, 255);
+  --error: rgb(120, 120, 120);
+  --success: rgb(100, 100, 100);
+  --warning: rgb(140, 140, 140);
+  --info: rgb(80, 80, 80);
+  --focus-ring: rgba(100, 100, 100, 0.5);
+  --sidebar-bg: rgb(250, 250, 250);
+  --sidebar-border: rgb(220, 220, 220);
+  --card-bg: var(--surface);
+  --card-border: var(--border);
+  --header-bg: rgb(250, 250, 250);
+  --header-border: rgb(220, 220, 220);
+}
+
 .theme-dark {
   /* Dark theme - Professional & Elegant */
   --background: rgb(17, 24, 39);

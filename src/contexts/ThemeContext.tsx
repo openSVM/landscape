@@ -1,6 +1,6 @@
 import React, { createContext, useState, useContext, ReactNode, useEffect } from 'react';
 
-type Theme = 'light' | 'dark' | 'blue';
+type Theme = 'grayscale' | 'light' | 'dark' | 'blue';
 
 interface ThemeContextType {
   theme: Theme;
@@ -17,10 +17,10 @@ interface ThemeProviderProps {
 }
 
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
-  // Initialize theme from localStorage or default to 'dark'
+  // Initialize theme from localStorage or default to 'grayscale'
   const [theme, setTheme] = useState<Theme>(() => {
     const savedTheme = localStorage.getItem(THEME_STORAGE_KEY) as Theme | null;
-    return savedTheme && ['light', 'dark', 'blue'].includes(savedTheme) ? savedTheme : 'dark';
+    return savedTheme && ['grayscale', 'light', 'dark', 'blue'].includes(savedTheme) ? savedTheme : 'grayscale';
   });
 
   // Save theme to localStorage whenever it changes
@@ -31,7 +31,7 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
   // Apply theme classes to document element
   useEffect(() => {
     // Remove all theme classes
-    document.documentElement.classList.remove('theme-light', 'theme-dark', 'theme-blue');
+    document.documentElement.classList.remove('theme-grayscale', 'theme-light', 'theme-dark', 'theme-blue');
     // Add current theme class
     document.documentElement.classList.add(`theme-${theme}`);
     

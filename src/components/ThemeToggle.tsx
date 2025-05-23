@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useTheme } from '../contexts/ThemeContext';
-import { FiChevronDown, FiMoon, FiSun, FiDroplet } from 'react-icons/fi';
+import { FiChevronDown, FiMoon, FiSun, FiDroplet, FiCircle } from 'react-icons/fi';
 
 const ThemeToggle: React.FC = () => {
   const { theme, setTheme } = useTheme();
@@ -23,6 +23,8 @@ const ThemeToggle: React.FC = () => {
   
   const getThemeIcon = () => {
     switch (theme) {
+      case 'grayscale':
+        return <FiCircle className="h-5 w-5" />;
       case 'dark':
         return <FiMoon className="h-5 w-5" />;
       case 'light':
@@ -30,12 +32,14 @@ const ThemeToggle: React.FC = () => {
       case 'blue':
         return <FiDroplet className="h-5 w-5" />;
       default:
-        return <FiMoon className="h-5 w-5" />;
+        return <FiCircle className="h-5 w-5" />;
     }
   };
   
   const getThemeName = () => {
     switch (theme) {
+      case 'grayscale':
+        return 'Dark';
       case 'dark':
         return 'Dark';
       case 'light':
@@ -43,7 +47,7 @@ const ThemeToggle: React.FC = () => {
       case 'blue':
         return 'Blue';
       default:
-        return 'Dark';
+        return 'Grayscale';
     }
   };
 
@@ -53,7 +57,9 @@ const ThemeToggle: React.FC = () => {
     const baseStyles = "flex items-center w-full px-4 py-2 text-sm text-left transition-colors duration-150";
     
     // Theme-specific hover and active states
-    if (buttonTheme === 'dark') {
+    if (buttonTheme === 'grayscale') {
+      return `${baseStyles} ${isActive ? 'bg-gray-300 text-gray-900' : 'hover:bg-gray-200/50'}`;
+    } else if (buttonTheme === 'dark') {
       return `${baseStyles} ${isActive ? 'bg-gray-700 text-white' : 'hover:bg-gray-700/20'}`;
     } else if (buttonTheme === 'light') {
       return `${baseStyles} ${isActive ? 'bg-gray-200 text-gray-900' : 'hover:bg-gray-200/50'}`;
@@ -94,6 +100,19 @@ const ThemeToggle: React.FC = () => {
           }}
         >
           <div className="py-1" role="menu" aria-orientation="vertical">
+            <button
+              className={getButtonStyles('grayscale')}
+              onClick={() => {
+                setTheme('grayscale');
+                setIsOpen(false);
+              }}
+              role="menuitem"
+              style={{ color: theme === 'grayscale' ? 'var(--primary)' : 'inherit' }}
+            >
+              <FiCircle className="mr-2 h-4 w-4" />
+              <span>Grayscale Theme</span>
+            </button>
+            
             <button
               className={getButtonStyles('dark')}
               onClick={() => {
