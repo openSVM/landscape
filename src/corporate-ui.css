@@ -579,7 +579,7 @@ p {
   box-shadow: var(--corporate-shadow-sm);
   border: 1px solid var(--corporate-border);
   transition: transform 0.2s, box-shadow 0.2s;
-  height: 28px; /* Increased from 24px */
+  height: 36px; /* Increased from 28px */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -593,9 +593,9 @@ p {
 }
 
 .project-logo-container {
-  width: 18px; /* Increased from 16px */
-  height: 18px; /* Increased from 16px */
-  margin: 0 4px 0 0;
+  width: 24px; /* Increased from 18px */
+  height: 24px; /* Increased from 18px */
+  margin: 0 6px 0 0; /* Increased margin */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -603,10 +603,10 @@ p {
 }
 
 .project-name {
-  font-size: var(--corporate-font-size-xs);
+  font-size: var(--corporate-font-size-sm);
   font-weight: 600;
   color: var(--corporate-primary);
-  margin: 0 4px 0 0;
+  margin: 0 6px 0 0; /* Increased margin */
   line-height: 1;
   white-space: nowrap;
   overflow: hidden;
@@ -615,7 +615,7 @@ p {
 }
 
 .project-category {
-  font-size: var(--corporate-font-size-xs);
+  font-size: var(--corporate-font-size-sm);
   color: var(--corporate-secondary);
   margin: 0;
   line-height: 1;
@@ -629,11 +629,11 @@ p {
 .corporate-project-card {
   background-color: var(--corporate-surface);
   border: 1px solid var(--corporate-border);
-  padding: 2px;
+  padding: 4px; /* Increased from 2px */
   margin: 0;
-  height: 28px; /* Increased from 24px */
-  min-height: 28px; /* Increased from 24px */
-  max-height: 28px; /* Increased from 24px */
+  height: 36px; /* Increased from 28px */
+  min-height: 36px; /* Increased from 28px */
+  max-height: 36px; /* Increased from 28px */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -650,9 +650,9 @@ p {
 }
 
 .corporate-project-logo-container {
-  width: 18px; /* Increased from 16px */
-  height: 18px; /* Increased from 16px */
-  margin: 0 4px 0 0;
+  width: 24px; /* Increased from 18px */
+  height: 24px; /* Increased from 18px */
+  margin: 0 6px 0 0; /* Increased margin */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -665,8 +665,8 @@ p {
 }
 
 .corporate-project-logo-placeholder {
-  width: 18px; /* Increased from 16px */
-  height: 18px; /* Increased from 16px */
+  width: 24px; /* Increased from 18px */
+  height: 24px; /* Increased from 18px */
   background-color: var(--corporate-accent);
   color: white;
   display: flex;
@@ -685,10 +685,10 @@ p {
 }
 
 .corporate-project-name {
-  font-size: 0.9rem; /* Increased from 0.7rem */
+  font-size: 1.1rem; /* Significantly increased from 0.9rem */
   font-weight: 600;
   color: var(--corporate-primary);
-  margin: 0 4px 0 0;
+  margin: 0 6px 0 0; /* Increased margin */
   line-height: 1;
   white-space: nowrap;
   overflow: hidden;
@@ -696,7 +696,7 @@ p {
 }
 
 .corporate-project-category {
-  font-size: 1rem; /* Increased from 0.8rem */
+  font-size: 1.2rem; /* Significantly increased from 1.0rem */
   font-weight: 500;
   color: var(--corporate-secondary);
   margin: 0;
@@ -709,8 +709,8 @@ p {
 /* Projects Grid - Ultra-compact for maximum content density */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); /* Increased from 70px */
-  gap: 2px;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Increased from 80px */
+  gap: 3px; /* Increased from 2px */
   padding: 0;
 }
 
@@ -777,7 +777,7 @@ p {
   }
   
   .projects-grid {
-    grid-template-columns: repeat(auto-fill, minmax(75px, 1fr)); /* Adjusted from 65px */
+    grid-template-columns: repeat(auto-fill, minmax(95px, 1fr)); /* Adjusted from 75px */
   }
 }
 
@@ -792,7 +792,7 @@ p {
   }
   
   .projects-grid {
-    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr)); /* Adjusted from 60px */
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); /* Adjusted from 70px */
   }
   
   .corporate-sidebar {
@@ -806,7 +806,7 @@ p {
   }
   
   .projects-grid {
-    grid-template-columns: repeat(auto-fill, minmax(65px, 1fr)); /* Adjusted from 55px */
+    grid-template-columns: repeat(auto-fill, minmax(85px, 1fr)); /* Adjusted from 65px */
   }
   
   .corporate-sidebar {
