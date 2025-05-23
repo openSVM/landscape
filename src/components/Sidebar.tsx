@@ -1,6 +1,7 @@
-import React from 'react';
-import { FiHome, FiGrid, FiBarChart2, FiFolder, FiStar, FiSettings, FiHelpCircle, FiX } from 'react-icons/fi';
+import React, { useState } from 'react';
+import { FiHome, FiGrid, FiBarChart2, FiFolder, FiStar, FiSettings, FiGithub, FiX } from 'react-icons/fi';
 import { CategoryType } from '../types';
+import PreferencesModal from './PreferencesModal';
 
 interface SidebarProps {
   categories: CategoryType[];
@@ -17,6 +18,20 @@ const Sidebar: React.FC<SidebarProps> = ({
   isOpen, 
   onClose 
 }) => {
+  const [isPreferencesModalOpen, setIsPreferencesModalOpen] = useState(false);
+
+  const openExternalLink = (url: string) => {
+    // Ensure URL is properly formatted and open in new tab with security attributes
+    try {
+      const secureUrl = url.startsWith('http') ? url : `https://${url}`;
+      window.open(secureUrl, '_blank', 'noopener,noreferrer');
+    } catch (error) {
+      console.error('Failed to open external link:', error);
+      // Fallback direct navigation as last resort
+      window.open('https://github.com/openSVM/landscape', '_blank');
+    }
+  };
+
   return (
     <>
       {isOpen && (
@@ -218,6 +233,8 @@ const Sidebar: React.FC<SidebarProps> = ({
                   // @ts-ignore - CSS custom property
                   '--tw-ring-color': 'var(--focus-ring)'
                 }}
+                onClick={() => setIsPreferencesModalOpen(true)}
+                aria-label="Open preferences"
               >
                 <FiSettings className="h-4 w-4 flex-shrink-0" />
                 <span className="truncate">Preferences</span>
@@ -230,14 +247,22 @@ const Sidebar: React.FC<SidebarProps> = ({
                   // @ts-ignore - CSS custom property
                   '--tw-ring-color': 'var(--focus-ring)'
                 }}
+                onClick={() => openExternalLink('https://github.com/openSVM/landscape')}
+                aria-label="View GitHub repository"
               >
-                <FiHelpCircle className="h-4 w-4 flex-shrink-0" />
-                <span className="truncate">Help & Support</span>
+                <FiGithub className="h-4 w-4 flex-shrink-0" />
+                <span className="truncate">GitHub</span>
               </button>
             </nav>
           </div>
         </div>
       </aside>
+
+      {/* Preferences Modal */}
+      <PreferencesModal 
+        isOpen={isPreferencesModalOpen}
+        onClose={() => setIsPreferencesModalOpen(false)}
+      />
     </>
   );
 };
