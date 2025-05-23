@@ -10,6 +10,11 @@ interface ProjectType {
   twitter?: string;
   telegram?: string;
   tags?: string[];
+  metrics?: {
+    tvl?: number;
+    users?: number;
+    transactions?: number;
+  };
 }
 
 interface CategoryType {

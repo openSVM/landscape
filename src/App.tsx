@@ -183,10 +183,10 @@ function App() {
         
         <div className="flex">
           <Sidebar 
-            categories={categories} 
             activeView={activeView}
             setActiveView={setActiveView}
             isOpen={sidebarOpen}
+            setIsOpen={setSidebarOpen}
             onClose={() => setSidebarOpen(false)}
           />
           

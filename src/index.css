@@ -3,6 +3,7 @@
 @import './navbar.css';
 @import './categories.css';
 @import './enhanced-ui.css';
+@import './corporate-ui.css';
 
 @tailwind base;
 @tailwind components;

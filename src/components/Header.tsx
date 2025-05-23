@@ -48,36 +48,26 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar, openCommandPalette }) =>
   };
 
   return (
-    <header 
-      className="sticky top-0 z-50 w-full px-4 py-3 lg:px-6 theme-transition"
-      style={{
-        backgroundColor: 'var(--header-bg)',
-        borderBottom: '1px solid var(--header-border)'
-      }}
-    >
+    <header className="corporate-header">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
           <button 
-            className="lg:hidden flex items-center justify-center w-9 h-9 rounded-md transition-colors duration-200 hover:bg-opacity-80"
-            style={{
-              color: 'var(--primary)',
-              backgroundColor: 'var(--surface-alt)'
-            }}
+            className="lg:hidden corporate-btn-icon"
             onClick={toggleSidebar}
             aria-label="Toggle sidebar"
           >
             <FiMenu className="h-5 w-5" />
           </button>
           
-          <div className="flex items-center gap-2.5">
+          <div className="corporate-logo">
             <img 
               src="/logos/solana.png" 
               alt="Solana Logo" 
               className="h-8 w-8"
             />
             <div className="flex flex-col">
-              <h1 className="text-base font-semibold leading-tight" style={{ color: 'var(--primary)' }}>Solana</h1>
-              <p className="text-xs leading-tight" style={{ color: 'var(--primary-light)' }}>Ecosystem</p>
+              <h1 className="text-base font-semibold leading-tight">Solana</h1>
+              <p className="text-xs leading-tight corporate-text-secondary">Ecosystem</p>
             </div>
           </div>
         </div>
@@ -85,11 +75,7 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar, openCommandPalette }) =>
         <div className="hidden md:flex items-center space-x-1 lg:space-x-2">
           <a 
             href="#dashboard"
-            className="nav-link px-3 py-2 rounded-md transition-colors hover:bg-opacity-80 hover:bg-surface-alt"
-            style={{
-              color: 'var(--primary)',
-              backgroundColor: 'transparent'
-            }}
+            className="corporate-nav-link"
             onClick={(e) => {
               e.preventDefault();
               handleNavigation('dashboard');
@@ -99,11 +85,7 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar, openCommandPalette }) =>
           </a>
           <a 
             href="#projects"
-            className="nav-link px-3 py-2 rounded-md transition-colors hover:bg-opacity-80 hover:bg-surface-alt"
-            style={{
-              color: 'var(--primary)',
-              backgroundColor: 'transparent'
-            }}
+            className="corporate-nav-link"
             onClick={(e) => {
               e.preventDefault();
               handleNavigation('projects');
@@ -113,11 +95,7 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar, openCommandPalette }) =>
           </a>
           <a 
             href="#statistics"
-            className="nav-link px-3 py-2 rounded-md transition-colors hover:bg-opacity-80 hover:bg-surface-alt"
-            style={{
-              color: 'var(--primary)',
-              backgroundColor: 'transparent'
-            }}
+            className="corporate-nav-link"
             onClick={(e) => {
               e.preventDefault();
               handleNavigation('statistics');
@@ -127,11 +105,7 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar, openCommandPalette }) =>
           </a>
           <a 
             href="#categories"
-            className="nav-link px-3 py-2 rounded-md transition-colors hover:bg-opacity-80 hover:bg-surface-alt"
-            style={{
-              color: 'var(--primary)',
-              backgroundColor: 'transparent'
-            }}
+            className="corporate-nav-link"
             onClick={(e) => {
               e.preventDefault();
               handleNavigation('categories');
@@ -143,11 +117,7 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar, openCommandPalette }) =>
             href="https://github.com/openSVM/landscape"
             target="_blank"
             rel="noopener noreferrer"
-            className="nav-link px-3 py-2 rounded-md transition-colors flex items-center gap-1.5 hover:bg-opacity-80 hover:bg-surface-alt"
-            style={{
-              color: 'var(--primary)',
-              backgroundColor: 'transparent'
-            }}
+            className="corporate-nav-link flex items-center gap-1.5"
             onClick={(e) => {
               e.preventDefault();
               openExternalLink('https://github.com/openSVM/landscape');
@@ -161,11 +131,7 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar, openCommandPalette }) =>
             href="https://opensvm.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="nav-link px-3 py-2 rounded-md transition-colors flex items-center gap-1.5 hover:bg-opacity-80 hover:bg-surface-alt"
-            style={{
-              color: 'var(--primary)',
-              backgroundColor: 'transparent'
-            }}
+            className="corporate-nav-link flex items-center gap-1.5"
             onClick={(e) => {
               e.preventDefault();
               openExternalLink('https://opensvm.com');
@@ -178,20 +144,16 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar, openCommandPalette }) =>
         
         <div className="flex items-center gap-2">
           <button 
-            className="flex items-center gap-1.5 px-3 py-2 rounded-md transition-colors hover:bg-opacity-80 hover:bg-surface-alt"
-            style={{
-              color: 'var(--primary)',
-              backgroundColor: 'transparent'
-            }}
+            className="corporate-btn-secondary flex items-center gap-1.5"
             onClick={openCommandPalette}
             aria-label="Search"
           >
             <FiSearch className="h-4 w-4" />
             <span className="text-sm hidden sm:inline">Search</span>
-            <span className="hidden md:inline command-palette-kbd">⌘K</span>
+            <span className="hidden md:inline corporate-kbd">⌘K</span>
           </button>
           
-          <div className="border-l h-6 mx-1 hidden sm:block" style={{ borderColor: 'var(--border)' }}></div>
+          <div className="corporate-divider"></div>
           
           <ThemeToggle />
         </div>

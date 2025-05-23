@@ -1,76 +1,58 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { FiSearch, FiX } from 'react-icons/fi';
+import React from 'react';
+import { FiSearch, FiFilter, FiX } from 'react-icons/fi';
 
 interface SearchBarProps {
-  onSearch: (term: string) => void;
+  searchTerm: string;
+  setSearchTerm: (term: string) => void;
+  onAdvancedFilters: () => void;
+  placeholder?: string;
 }
 
-export const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [isFocused, setIsFocused] = useState(false);
-  const inputRef = useRef<HTMLInputElement>(null);
-  
-  // Debounce search to improve performance
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      onSearch(searchTerm);
-    }, 300);
-    
-    return () => clearTimeout(timer);
-  }, [searchTerm, onSearch]);
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value;
-    setSearchTerm(value);
-  };
-  
+const SearchBar: React.FC<SearchBarProps> = ({ 
+  searchTerm, 
+  setSearchTerm, 
+  onAdvancedFilters,
+  placeholder = "Search projects, categories, or tags..."
+}) => {
   const handleClear = () => {
     setSearchTerm('');
-    onSearch('');
-    if (inputRef.current) {
-      inputRef.current.focus();
-    }
-  };
-  
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    // Handle escape key to clear search
-    if (e.key === 'Escape') {
-      handleClear();
-    }
   };
 
   return (
-    <div 
-      className={`glass-effect relative flex items-center w-full rounded-md ${
-        isFocused ? 'ring-2 ring-accent' : ''
-      } transition-all duration-300`}
-    >
-      <div className="flex items-center justify-center w-10 text-gray-500">
-        <FiSearch className="h-4 w-4" />
+    <div className="corporate-search-container">
+      <div className="corporate-search-input-wrapper">
+        <FiSearch className="corporate-search-icon" />
+        
+        <input
+          type="text"
+          className="corporate-search-input"
+          placeholder={placeholder}
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          aria-label="Search"
+        />
+        
+        {searchTerm && (
+          <button 
+            className="corporate-search-clear"
+            onClick={handleClear}
+            aria-label="Clear search"
+          >
+            <FiX className="corporate-clear-icon" />
+          </button>
+        )}
       </div>
       
-      <input
-        ref={inputRef}
-        type="text"
-        placeholder="Search projects..."
-        value={searchTerm}
-        onChange={handleChange}
-        onKeyDown={handleKeyDown}
-        onFocus={() => setIsFocused(true)}
-        onBlur={() => setIsFocused(false)}
-        className="glass-input w-full py-3 px-0 border-0 focus:ring-0 focus:outline-none text-sm"
-        aria-label="Search projects"
-      />
-      
-      {searchTerm && (
-        <button 
-          onClick={handleClear}
-          className="flex items-center justify-center w-10 text-gray-500 hover:text-gray-700 transition-colors"
-          aria-label="Clear search"
-        >
-          <FiX className="h-4 w-4" />
-        </button>
-      )}
+      <button
+        className="corporate-filter-button"
+        onClick={onAdvancedFilters}
+        aria-label="Advanced filters"
+      >
+        <FiFilter className="corporate-filter-icon" />
+        <span className="corporate-filter-text">Filters</span>
+      </button>
     </div>
   );
 };
+
+export default SearchBar;

@@ -1,268 +1,148 @@
 import React, { useState } from 'react';
-import { FiHome, FiGrid, FiBarChart2, FiFolder, FiStar, FiSettings, FiGithub, FiX } from 'react-icons/fi';
-import { CategoryType } from '../types';
+import { FiHome, FiGrid, FiBarChart2, FiTag, FiStar, FiSettings, FiGithub } from 'react-icons/fi';
+import { useTheme } from '../contexts/ThemeContext';
 import PreferencesModal from './PreferencesModal';
+import { CategoryType } from '../types';
 
 interface SidebarProps {
-  categories: CategoryType[];
+  isOpen: boolean;
+  setIsOpen: (isOpen: boolean) => void;
   activeView: string;
   setActiveView: (view: string) => void;
-  isOpen: boolean;
   onClose: () => void;
+  categories?: CategoryType[];
 }
 
 const Sidebar: React.FC<SidebarProps> = ({ 
-  categories, 
-  activeView, 
-  setActiveView, 
   isOpen, 
-  onClose 
+  setIsOpen, 
+  activeView, 
+  setActiveView,
+  onClose
 }) => {
-  const [isPreferencesModalOpen, setIsPreferencesModalOpen] = useState(false);
+  const { theme } = useTheme();
+  const [showPreferences, setShowPreferences] = useState(false);
 
-  const openExternalLink = (url: string) => {
-    // Ensure URL is properly formatted and open in new tab with security attributes
-    try {
-      const secureUrl = url.startsWith('http') ? url : `https://${url}`;
-      window.open(secureUrl, '_blank', 'noopener,noreferrer');
-    } catch (error) {
-      console.error('Failed to open external link:', error);
-      // Fallback direct navigation as last resort
-      window.open('https://github.com/openSVM/landscape', '_blank');
+  const handleViewChange = (view: string) => {
+    setActiveView(view);
+    if (window.innerWidth < 1024) {
+      setIsOpen(false);
+      onClose();
     }
+  };
+
+  const openGitHub = () => {
+    window.open('https://github.com/openSVM/landscape', '_blank', 'noopener,noreferrer');
   };
 
   return (
     <>
-      {isOpen && (
-        <div 
-          className="fixed inset-0 bg-black bg-opacity-50 z-40 transition-opacity duration-300 lg:hidden" 
-          onClick={onClose}
-          aria-hidden="true"
-        ></div>
-      )}
-      <aside 
-        className={`fixed inset-y-0 left-0 z-50 w-64 transform transition-transform duration-300 ease-in-out lg:translate-x-0 lg:static lg:h-screen ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}
-        style={{
-          backgroundColor: 'var(--sidebar-bg)',
-          borderRight: '1px solid var(--sidebar-border)'
-        }}
-        aria-label="Sidebar navigation"
-      >
-        <div className="p-4 flex items-center justify-between" style={{ borderBottom: '1px solid var(--sidebar-border)' }}>
-          <h2 className="text-base font-semibold" style={{ color: 'var(--primary)' }}>Navigation</h2>
-          <button 
-            className="lg:hidden flex items-center justify-center w-8 h-8 rounded-md transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2"
-            style={{
-              color: 'var(--primary-light)',
-              // @ts-ignore - CSS custom property
-              '--tw-ring-color': 'var(--focus-ring)'
-            }}
-            onClick={onClose}
-            aria-label="Close sidebar"
-          >
-            <FiX className="h-5 w-5" />
-          </button>
-        </div>
-        
-        <div className="p-4" style={{ borderBottom: '1px solid var(--sidebar-border)' }}>
-          <h3 className="text-xs font-medium uppercase mb-2" style={{ color: 'var(--primary-light)' }}>Main</h3>
-          <nav className="mt-2 space-y-1">
-            <button 
-              className="sidebar-link flex items-center gap-2 px-3 py-2.5 rounded-md text-sm w-full text-left transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-1"
-              style={{
-                backgroundColor: activeView === 'dashboard' ? 'var(--accent-light)' : 'transparent',
-                color: activeView === 'dashboard' ? 'var(--text-on-accent)' : 'var(--primary)',
-                // @ts-ignore - CSS custom property
-                '--tw-ring-color': 'var(--focus-ring)'
-              }}
-              onClick={() => {
-                setActiveView('dashboard');
-                window.location.hash = 'dashboard';
-                if (window.innerWidth < 1024) onClose();
-              }}
-              aria-current={activeView === 'dashboard' ? 'page' : undefined}
-              id="sidebar-dashboard-link"
-            >
-              <FiHome className="h-4 w-4 flex-shrink-0" />
-              <span className="truncate">Dashboard</span>
-            </button>
-            
-            <button 
-              className="sidebar-link flex items-center gap-2 px-3 py-2.5 rounded-md text-sm w-full text-left transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-1"
-              style={{
-                backgroundColor: activeView === 'projects' ? 'var(--accent-light)' : 'transparent',
-                color: activeView === 'projects' ? 'var(--text-on-accent)' : 'var(--primary)',
-                // @ts-ignore - CSS custom property
-                '--tw-ring-color': 'var(--focus-ring)'
-              }}
-              onClick={() => {
-                setActiveView('projects');
-                window.location.hash = 'projects';
-                if (window.innerWidth < 1024) onClose();
-              }}
-              aria-current={activeView === 'projects' ? 'page' : undefined}
-              id="sidebar-projects-link"
-            >
-              <FiGrid className="h-4 w-4 flex-shrink-0" />
-              <span className="truncate">Projects</span>
-            </button>
-            
-            <button 
-              className="sidebar-link flex items-center gap-2 px-3 py-2.5 rounded-md text-sm w-full text-left transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-1"
-              style={{
-                backgroundColor: activeView === 'statistics' ? 'var(--accent-light)' : 'transparent',
-                color: activeView === 'statistics' ? 'var(--text-on-accent)' : 'var(--primary)',
-                // @ts-ignore - CSS custom property
-                '--tw-ring-color': 'var(--focus-ring)'
-              }}
-              onClick={() => {
-                setActiveView('statistics');
-                window.location.hash = 'statistics';
-                if (window.innerWidth < 1024) onClose();
-              }}
-              aria-current={activeView === 'statistics' ? 'page' : undefined}
-              id="sidebar-statistics-link"
-            >
-              <FiBarChart2 className="h-4 w-4 flex-shrink-0" />
-              <span className="truncate">Statistics</span>
-            </button>
-          </nav>
-        </div>
-        
-        <div className="p-4" style={{ borderBottom: '1px solid var(--sidebar-border)' }}>
-          <h3 className="text-xs font-medium uppercase mb-2" style={{ color: 'var(--primary-light)' }}>Categories</h3>
-          <div className="mt-2 max-h-[30vh] overflow-y-auto pr-1 space-y-1">
-            <button 
-              className="sidebar-link flex items-center gap-2 px-3 py-2.5 rounded-md text-sm w-full text-left transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-1"
-              style={{
-                backgroundColor: activeView === 'categories' ? 'var(--accent-light)' : 'transparent',
-                color: activeView === 'categories' ? 'var(--text-on-accent)' : 'var(--primary)',
-                // @ts-ignore - CSS custom property
-                '--tw-ring-color': 'var(--focus-ring)'
-              }}
-              onClick={() => {
-                setActiveView('categories');
-                window.location.hash = 'categories';
-                if (window.innerWidth < 1024) onClose();
-              }}
-              aria-current={activeView === 'categories' ? 'page' : undefined}
-              id="sidebar-categories-link"
-            >
-              <FiFolder className="h-4 w-4 flex-shrink-0" />
-              <span className="truncate">All Categories</span>
-            </button>
-            {categories && categories.length > 0 ? (
-              categories.map((category) => (
-                <div key={category.name}>
-                  <button 
-                    className="flex items-center gap-2 px-3 py-2.5 rounded-md text-sm w-full text-left transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-1"
-                    style={{
-                      color: 'var(--primary)',
-                      // @ts-ignore - CSS custom property
-                      '--tw-ring-color': 'var(--focus-ring)'
-                    }}
-                    aria-label={`${category.name} category with ${category.count} projects`}
-                    onClick={() => {
-                      setActiveView('projects');
-                      window.location.hash = 'projects';
-                      // Dispatch a custom event to update filters
-                      const event = new CustomEvent('updateFilters', {
-                        detail: { category: category.name, subcategory: 'all' }
-                      });
-                      window.dispatchEvent(event);
-                      if (window.innerWidth < 1024) onClose();
-                    }}
-                  >
-                    <FiFolder className="h-4 w-4 flex-shrink-0" style={{ color: 'var(--primary-light)' }} />
-                    <span className="flex-1 truncate">{category.name}</span>
-                    <span 
-                      className="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium ml-auto"
-                      style={{
-                        backgroundColor: 'var(--surface-alt)',
-                        color: 'var(--primary)'
-                      }}
-                    >
-                      {category.count}
-                    </span>
-                  </button>
-                </div>
-              ))
-            ) : (
-              <div className="text-sm p-2" style={{ color: 'var(--primary-light)' }}>No categories available</div>
-            )}
-          </div>
-        </div>
-        
-        <div className="p-4" style={{ borderBottom: '1px solid var(--sidebar-border)' }}>
-          <h3 className="text-xs font-medium uppercase mb-2" style={{ color: 'var(--primary-light)' }}>Favorites</h3>
-          <nav className="mt-2 space-y-1">
-            <button 
-              className="sidebar-link flex items-center gap-2 px-3 py-2.5 rounded-md text-sm w-full text-left transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-1"
-              style={{
-                color: 'var(--primary)',
-                // @ts-ignore - CSS custom property
-                '--tw-ring-color': 'var(--focus-ring)'
-              }}
-              onClick={() => {
-                setActiveView('projects');
-                window.location.hash = 'projects';
-                // Dispatch a custom event to update filters for starred projects
-                const event = new CustomEvent('updateFilters', {
-                  detail: { starred: true }
-                });
-                window.dispatchEvent(event);
-                if (window.innerWidth < 1024) onClose();
-              }}
-              id="sidebar-starred-link"
-            >
-              <FiStar className="h-4 w-4 flex-shrink-0 text-yellow-500" />
-              <span className="truncate">Starred Projects</span>
-            </button>
-          </nav>
-        </div>
-        
-        <div className="mt-auto">
-          <div className="p-4" style={{ borderTop: '1px solid var(--sidebar-border)' }}>
-            <h3 className="text-xs font-medium uppercase mb-2" style={{ color: 'var(--primary-light)' }}>Settings</h3>
-            <nav className="mt-2 space-y-1">
-              <button 
-                className="flex items-center gap-2 px-3 py-2.5 rounded-md text-sm w-full text-left transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-1"
-                style={{
-                  color: 'var(--primary)',
-                  // @ts-ignore - CSS custom property
-                  '--tw-ring-color': 'var(--focus-ring)'
-                }}
-                onClick={() => setIsPreferencesModalOpen(true)}
-                aria-label="Open preferences"
+      <div className={`corporate-sidebar ${isOpen ? 'open' : ''}`}>
+        <div className="corporate-sidebar-content">
+          <div className="corporate-sidebar-section">
+            <h2 className="corporate-sidebar-title">MAIN</h2>
+            <nav className="corporate-sidebar-nav">
+              <button
+                id="sidebar-dashboard-link"
+                className={`corporate-sidebar-item ${activeView === 'dashboard' ? 'active' : ''}`}
+                onClick={() => handleViewChange('dashboard')}
               >
-                <FiSettings className="h-4 w-4 flex-shrink-0" />
-                <span className="truncate">Preferences</span>
+                <FiHome className="corporate-sidebar-icon" />
+                <span>Dashboard</span>
               </button>
               
-              <button 
-                className="flex items-center gap-2 px-3 py-2.5 rounded-md text-sm w-full text-left transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-1"
-                style={{
-                  color: 'var(--primary)',
-                  // @ts-ignore - CSS custom property
-                  '--tw-ring-color': 'var(--focus-ring)'
-                }}
-                onClick={() => openExternalLink('https://github.com/openSVM/landscape')}
-                aria-label="View GitHub repository"
+              <button
+                id="sidebar-projects-link"
+                className={`corporate-sidebar-item ${activeView === 'projects' ? 'active' : ''}`}
+                onClick={() => handleViewChange('projects')}
               >
-                <FiGithub className="h-4 w-4 flex-shrink-0" />
-                <span className="truncate">GitHub</span>
+                <FiGrid className="corporate-sidebar-icon" />
+                <span>Projects</span>
+              </button>
+              
+              <button
+                id="sidebar-statistics-link"
+                className={`corporate-sidebar-item ${activeView === 'statistics' ? 'active' : ''}`}
+                onClick={() => handleViewChange('statistics')}
+              >
+                <FiBarChart2 className="corporate-sidebar-icon" />
+                <span>Statistics</span>
+              </button>
+            </nav>
+          </div>
+          
+          <div className="corporate-sidebar-section">
+            <h2 className="corporate-sidebar-title">CATEGORIES</h2>
+            <nav className="corporate-sidebar-nav">
+              <button
+                id="sidebar-categories-link"
+                className={`corporate-sidebar-item ${activeView === 'categories' ? 'active' : ''}`}
+                onClick={() => handleViewChange('categories')}
+              >
+                <FiTag className="corporate-sidebar-icon" />
+                <span>All Categories</span>
+              </button>
+            </nav>
+          </div>
+          
+          <div className="corporate-sidebar-section">
+            <h2 className="corporate-sidebar-title">FAVORITES</h2>
+            <nav className="corporate-sidebar-nav">
+              <button
+                id="sidebar-starred-link"
+                className={`corporate-sidebar-item ${activeView === 'starred' ? 'active' : ''}`}
+                onClick={() => handleViewChange('starred')}
+              >
+                <FiStar className="corporate-sidebar-icon" />
+                <span>Starred Projects</span>
+              </button>
+            </nav>
+          </div>
+          
+          <div className="corporate-sidebar-section">
+            <h2 className="corporate-sidebar-title">SETTINGS</h2>
+            <nav className="corporate-sidebar-nav">
+              <button
+                className="corporate-sidebar-item"
+                onClick={() => setShowPreferences(true)}
+              >
+                <FiSettings className="corporate-sidebar-icon" />
+                <span>Preferences</span>
+              </button>
+              
+              <button
+                className="corporate-sidebar-item"
+                onClick={openGitHub}
+              >
+                <FiGithub className="corporate-sidebar-icon" />
+                <span>GitHub</span>
               </button>
             </nav>
           </div>
         </div>
-      </aside>
-
-      {/* Preferences Modal */}
-      <PreferencesModal 
-        isOpen={isPreferencesModalOpen}
-        onClose={() => setIsPreferencesModalOpen(false)}
-      />
+        
+        <div className="corporate-sidebar-footer">
+          <div className="corporate-sidebar-theme-indicator">
+            <div className={`corporate-theme-dot ${theme}`}></div>
+            <span className="corporate-theme-name">{theme.charAt(0).toUpperCase() + theme.slice(1)} Theme</span>
+          </div>
+          <div className="corporate-sidebar-version">v1.2.0</div>
+        </div>
+      </div>
+      
+      {isOpen && (
+        <div 
+          className="corporate-sidebar-overlay"
+          onClick={() => {
+            setIsOpen(false);
+            onClose();
+          }}
+        ></div>
+      )}
+      
+      {showPreferences && (
+        <PreferencesModal onClose={() => setShowPreferences(false)} />
+      )}
     </>
   );
 };

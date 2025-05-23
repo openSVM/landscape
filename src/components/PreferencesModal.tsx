@@ -3,15 +3,12 @@ import { FiX, FiSun, FiMoon, FiDroplet, FiEye, FiLayout, FiSettings } from 'reac
 import { useTheme } from '../contexts/ThemeContext';
 
 interface PreferencesModalProps {
-  isOpen: boolean;
   onClose: () => void;
 }
 
-const PreferencesModal: React.FC<PreferencesModalProps> = ({ isOpen, onClose }) => {
+const PreferencesModal: React.FC<PreferencesModalProps> = ({ onClose }) => {
   const { theme, setTheme } = useTheme();
   const [activeTab, setActiveTab] = useState('appearance');
-  
-  if (!isOpen) return null;
 
   return (
     <div className="fixed inset-0 z-50 overflow-y-auto">
