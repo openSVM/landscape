@@ -1,5 +1,4 @@
 import React from 'react';
-import { FiInfo } from 'react-icons/fi';
 
 interface ProjectCardProps {
   id: string;
