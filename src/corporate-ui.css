@@ -650,8 +650,8 @@ p {
 }
 
 .corporate-project-logo-container {
-  width: 12px;
-  height: 12px;
+  width: 16px;
+  height: 16px;
   margin: 0 4px 0 0;
   display: flex;
   align-items: center;
@@ -665,8 +665,8 @@ p {
 }
 
 .corporate-project-logo-placeholder {
-  width: 12px;
-  height: 12px;
+  width: 16px;
+  height: 16px;
   background-color: var(--corporate-accent);
   color: white;
   display: flex;
@@ -685,7 +685,7 @@ p {
 }
 
 .corporate-project-name {
-  font-size: var(--corporate-font-size-xs);
+  font-size: 0.7rem;
   font-weight: 600;
   color: var(--corporate-primary);
   margin: 0 4px 0 0;
@@ -696,7 +696,8 @@ p {
 }
 
 .corporate-project-category {
-  font-size: var(--corporate-font-size-xs);
+  font-size: 0.8rem;
+  font-weight: 500;
   color: var(--corporate-secondary);
   margin: 0;
   line-height: 1;
@@ -705,14 +706,10 @@ p {
   text-overflow: ellipsis;
 }
 
-.corporate-project-hover-overlay {
-  display: none;
-}
-
 /* Projects Grid - Ultra-compact for maximum content density */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
   gap: 2px;
   padding: 0;
 }
@@ -780,7 +777,7 @@ p {
   }
   
   .projects-grid {
-    grid-template-columns: repeat(auto-fill, minmax(45px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(65px, 1fr));
   }
 }
 
@@ -795,7 +792,7 @@ p {
   }
   
   .projects-grid {
-    grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
   }
   
   .corporate-sidebar {
@@ -809,7 +806,7 @@ p {
   }
   
   .projects-grid {
-    grid-template-columns: repeat(auto-fill, minmax(35px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(55px, 1fr));
   }
   
   .corporate-sidebar {
